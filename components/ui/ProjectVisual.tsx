@@ -100,9 +100,9 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
             <span className="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
           </div>
-          <span className="ml-2 font-mono text-[10px] tracking-tight text-slate-500 font-bold">{titleText}</span>
+          <span className="ml-2 font-mono text-[10px] tracking-tight text-slate-300 font-bold">{titleText}</span>
         </div>
-        <div className="flex items-center gap-1.5 text-slate-500">
+        <div className="flex items-center gap-1.5 text-slate-400">
           <Icon size={12} />
         </div>
       </div>
@@ -124,7 +124,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
                 key={idx} 
                 className={`${
                   log.startsWith("redis-cli") 
-                    ? "text-slate-500" 
+                    ? "text-slate-400" 
                     : log.includes("SUCCESS") 
                     ? "text-emerald-400 font-bold" 
                     : log.includes("Error") 
@@ -138,7 +138,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             ))}
             <div className="w-2 h-4 bg-slate-400 inline-block animate-pulse ml-0.5 mt-1" />
           </div>
-          <div className="mt-2 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] text-slate-500">
+          <div className="mt-2 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] text-slate-400">
             <span className="flex items-center gap-1 text-emerald-500"><Lock size={10} /> HMAC Signature Verified</span>
             <span>Latency: 184ms</span>
           </div>
@@ -152,21 +152,21 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             {/* School statistics summary */}
             <div className="grid grid-cols-3 gap-2 bg-slate-900/60 p-2 rounded-lg border border-slate-800/60">
               <div>
-                <p className="text-[9px] text-slate-500 uppercase font-black">Students</p>
+                <p className="text-[9px] text-slate-400 uppercase font-black">Students</p>
                 <p className="text-sm font-bold text-white">1,420</p>
               </div>
               <div>
-                <p className="text-[9px] text-slate-500 uppercase font-black">Sync Rate</p>
+                <p className="text-[9px] text-slate-400 uppercase font-black">Sync Rate</p>
                 <p className="text-sm font-bold text-blue-400">96.4%</p>
               </div>
               <div>
-                <p className="text-[9px] text-slate-500 uppercase font-black">Queued PDFs</p>
+                <p className="text-[9px] text-slate-400 uppercase font-black">Queued PDFs</p>
                 <p className="text-sm font-bold text-emerald-400">0</p>
               </div>
             </div>
             {/* Custom collision checker tree */}
             <div className="space-y-1.5">
-              <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black">Schedules Validation</p>
+              <p className="text-[10px] text-slate-400 uppercase tracking-widest font-black">Schedules Validation</p>
               <div className="flex items-center justify-between p-1.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
                 <span className="font-mono">Math 101 (Room 4B)</span>
                 <span className="px-1.5 py-0.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold rounded text-[8px]">CONFLICT FREE</span>
@@ -186,10 +186,10 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
           <div className="flex flex-col gap-3 flex-1 justify-between">
             {/* Encrypted DB field representation */}
             <div className="space-y-1.5">
-              <p className="text-[9px] text-slate-500 uppercase font-black tracking-widest">Active Salary Query</p>
+              <p className="text-[9px] text-slate-400 uppercase font-black tracking-widest">Active Salary Query</p>
               <div className="font-mono bg-slate-900/80 p-2 rounded border border-slate-800 text-[10px] text-slate-300 space-y-1 leading-normal">
                 <p className="text-blue-400"><span className="text-purple-400">SELECT</span> name, salary_hash <span className="text-purple-400">FROM</span> employees</p>
-                <p className="text-slate-500">// AES-256 Cryptographic Output</p>
+                <p className="text-slate-400">// AES-256 Cryptographic Output</p>
                 <p className="text-yellow-500/90 truncate">0x8F3D129C... (Arif R.)</p>
                 <p className="text-yellow-500/90 truncate">0x9E7F44B2... (Tariqul I.)</p>
               </div>
@@ -197,7 +197,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             {/* Audit logger status */}
             <div className="p-2 rounded bg-blue-500/5 border border-blue-500/10 text-blue-400 font-mono text-[9px] flex items-center justify-between">
               <span className="flex items-center gap-1"><Check size={10} /> Blind index search matched.</span>
-              <span className="text-slate-500">Log: Saved</span>
+              <span className="text-slate-400">Log: Saved</span>
             </div>
           </div>
         </WindowFrame>
@@ -209,22 +209,22 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
           <div className="flex flex-col gap-3 flex-1 justify-between">
             <div className="grid grid-cols-3 gap-2 flex-1">
               <div className="bg-slate-900/60 p-2 rounded border border-slate-800/80 flex flex-col justify-between">
-                <span className="text-[8px] font-black uppercase text-slate-500">Procurement</span>
+                <span className="text-[8px] font-black uppercase text-slate-400">Procurement</span>
                 <span className="font-mono text-[10px] text-slate-300">FAB-COT-01</span>
                 <span className="text-[8px] text-emerald-400 bg-emerald-500/5 border border-emerald-500/10 px-1 rounded w-max mt-1 font-bold">IN STORAGE</span>
               </div>
               <div className="bg-slate-900/60 p-2 rounded border border-slate-800/80 flex flex-col justify-between">
-                <span className="text-[8px] font-black uppercase text-slate-500">Dyeing Line</span>
+                <span className="text-[8px] font-black uppercase text-slate-400">Dyeing Line</span>
                 <span className="font-mono text-[10px] text-slate-300">TSH-BLU-42</span>
                 <span className="text-[8px] text-amber-400 bg-amber-500/5 border border-amber-500/10 px-1 rounded w-max mt-1 font-bold">IN DYE BATH</span>
               </div>
               <div className="bg-slate-900/60 p-2 rounded border border-slate-800/80 flex flex-col justify-between">
-                <span className="text-[8px] font-black uppercase text-slate-500">Shipping</span>
+                <span className="text-[8px] font-black uppercase text-slate-400">Shipping</span>
                 <span className="font-mono text-[10px] text-slate-300">EXP-MUM-08</span>
                 <span className="text-[8px] text-blue-400 bg-blue-500/5 border border-blue-500/10 px-1 rounded w-max mt-1 font-bold">IN TRANSIT</span>
               </div>
             </div>
-            <div className="text-[8px] font-mono text-slate-600 flex justify-between">
+            <div className="text-[8px] font-mono text-slate-400 flex justify-between">
               <span>Sockets: Connected</span>
               <span>Reconciled items: 2,400</span>
             </div>
@@ -260,7 +260,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
                   <span className="text-amber-400 font-bold flex items-center gap-1">
                     <AlertTriangle size={10} /> OFFLINE MODE
                   </span>
-                  <span className="text-slate-500">Cached: {posCacheCount} txns</span>
+                  <span className="text-slate-400">Cached: {posCacheCount} txns</span>
                 </>
               )}
               {posSyncState === "syncing" && (
@@ -268,7 +268,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
                   <span className="text-blue-400 font-bold flex items-center gap-1 animate-pulse">
                     <RefreshCw size={10} className="animate-spin" /> SYNCING...
                   </span>
-                  <span className="text-slate-500">Pushing cache</span>
+                  <span className="text-slate-400">Pushing cache</span>
                 </>
               )}
               {posSyncState === "synced" && (
@@ -276,7 +276,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
                   <span className="text-emerald-400 font-bold flex items-center gap-1">
                     <Check size={10} /> OUTLETS SYNCED
                   </span>
-                  <span className="text-slate-500">Central inventory OK</span>
+                  <span className="text-slate-400">Central inventory OK</span>
                 </>
               )}
             </div>
@@ -289,7 +289,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
         <WindowFrame titleText="ide://kodersolution-booking" icon={Code}>
           <div className="flex flex-1 gap-2 overflow-hidden">
             {/* Sidebar tree */}
-            <div className="w-1/3 border-r border-slate-800/80 pr-1 flex flex-col font-mono text-[9px] text-slate-500 space-y-1">
+            <div className="w-1/3 border-r border-slate-800/80 pr-1 flex flex-col font-mono text-[9px] text-slate-400 space-y-1">
               <span className="text-slate-400 flex items-center gap-1 font-bold mb-1"><FolderTree size={10} /> src</span>
               <span className="ml-2">app/page.tsx</span>
               <span className="ml-2 text-blue-400 font-bold">prisma.schema</span>
@@ -298,7 +298,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             {/* Schema code */}
             <div className="flex-1 font-mono text-[9px] leading-relaxed text-slate-300 overflow-hidden flex flex-col justify-between">
               <div className="space-y-0.5">
-                <p className="text-slate-500">// Database lock criteria</p>
+                <p className="text-slate-400">// Database lock criteria</p>
                 <p><span className="text-purple-400">model</span> <span className="text-emerald-400">Booking</span> {"{"}</p>
                 <p className="pl-2">id  String @id</p>
                 <p className="pl-2">slot DateTime</p>
@@ -322,11 +322,11 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             {/* Wallet values */}
             <div className="flex justify-between items-center bg-slate-900/60 p-2 rounded-lg border border-slate-800/60">
               <div>
-                <p className="text-[8px] text-slate-500 uppercase font-black">Net Balance</p>
+                <p className="text-[8px] text-slate-400 uppercase font-black">Net Balance</p>
                 <p className="text-xs font-bold text-white">$4,850.00 BDT</p>
               </div>
               <div className="text-right">
-                <p className="text-[8px] text-slate-500 uppercase font-black">Monthly Savings</p>
+                <p className="text-[8px] text-slate-400 uppercase font-black">Monthly Savings</p>
                 <p className="text-xs font-bold text-emerald-400">+12.4%</p>
               </div>
             </div>
@@ -375,13 +375,13 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
             </div>
             {/* Live match comments logs */}
             <div className="space-y-1 font-mono text-[9px] text-slate-400 leading-normal">
-              <p className="text-slate-500">[82'] Sub: Pedri (Out) {"->"} Fermín (In)</p>
+              <p className="text-slate-400">[82'] Sub: Pedri (Out) {"->"} Fermín (In)</p>
               <p className="text-emerald-400 font-bold">[75'] GOAL! Lewandowski (Pen) - BAR 2-1</p>
             </div>
             {/* WebSocket sync network status */}
             <div className="p-1.5 rounded bg-blue-500/5 border border-blue-500/10 text-[8px] text-blue-400 font-mono flex items-center justify-between">
               <span className="flex items-center gap-1"><RefreshCw size={10} className="animate-spin" /> Laravel Echo WebSocket online</span>
-              <span className="text-slate-500">Latency: 45ms</span>
+              <span className="text-slate-400">Latency: 45ms</span>
             </div>
           </div>
         </WindowFrame>
@@ -392,7 +392,7 @@ export default function ProjectVisual({ projectId, image, title }: ProjectVisual
         <div className="w-full h-full flex flex-col items-center justify-center bg-[#0F172A] border border-slate-800 rounded-xl p-6 text-center select-none">
           <Layers className="text-blue-500 mb-3" size={32} />
           <h4 className="text-sm font-bold text-white mb-1">{title}</h4>
-          <p className="text-[10px] text-slate-500 uppercase tracking-widest">{projectId}</p>
+          <p className="text-[10px] text-slate-400 uppercase tracking-widest">{projectId}</p>
         </div>
       );
   }
