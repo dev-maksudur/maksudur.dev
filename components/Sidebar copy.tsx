@@ -116,7 +116,7 @@
 //             <a href="http://linkedin.com/in/maksudur-dev" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
 //               <Linkedin size={18} />
 //             </a>
-//             <a href="mailto:valiantmaksud@gmail.com" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+//             <a href="mailto:maksudur.dev02@gmail.com" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
 //               <Mail size={18} />
 //             </a>
 //           </div>

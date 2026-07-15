@@ -2,7 +2,6 @@
 
 import { FadeIn } from "@/components/ui/framer-wrapper";
 import { Server, Layout, Database, Shield, Terminal, Layers } from "lucide-react";
-import { useTheme } from "@/components/ThemeProvider";
 
 const skillCategories = [
   {
@@ -19,7 +18,7 @@ const skillCategories = [
     color: "text-purple-400",
     bg: "bg-purple-500/10",
     border: "border-purple-500/20",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Redux"]
+    tech: ["React", "Next.Js", "TypeScript", "Tailwind CSS"]
   },
   {
     title: "Database & Caching",
@@ -56,19 +55,14 @@ const skillCategories = [
 ];
 
 export default function Skills() {
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
-
   return (
     <section id="skills" className="py-12 px-3 sm:px-6 lg:px-8 relative max-w-6xl mx-auto">
       <FadeIn>
         <div className="mb-16">
-          <h2 className={`text-4xl md:text-5xl font-black mb-4 transition-colors ${
-            isDark ? 'text-white' : 'text-slate-900'
-          }`}>
+          <h2 className="text-4xl md:text-5xl font-black mb-4 transition-colors text-slate-900 dark:text-white">
             Technical <span className="text-blue-500">Expertise</span>
           </h2>
-          <p className={`text-lg ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
+          <p className="text-lg text-slate-600 dark:text-slate-400">
             A comprehensive stack of technologies I use to build scalable systems.
           </p>
         </div>
@@ -77,24 +71,14 @@ export default function Skills() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skillCategories.map((category, idx) => (
           <FadeIn key={category.title} delay={idx * 0.1} className="h-full">
-            <div className={`group p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-1 h-full flex flex-col ${
-              isDark
-                ? `bg-white/5 hover:bg-white/10 ${category.border}`
-                : 'bg-slate-100 hover:bg-slate-200 border-slate-300'
-            }`}>
+            <div className={`group p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-1 h-full flex flex-col bg-slate-100 hover:bg-slate-200 border-slate-300 dark:bg-white/5 dark:hover:bg-white/10 dark:${category.border}`}>
               <div className={`w-12 h-12 rounded-xl ${category.bg} ${category.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <category.icon size={24} />
               </div>
-              <h3 className={`text-xl font-bold mb-4 transition-colors ${
-                isDark ? 'text-white' : 'text-slate-900'
-              }`}>{category.title}</h3>
+              <h3 className="text-xl font-bold mb-4 transition-colors text-slate-900 dark:text-white">{category.title}</h3>
               <div className="flex flex-wrap gap-2 mt-auto">
                 {category.tech.map(t => (
-                  <span key={t} className={`text-xs px-2.5 py-1 rounded-md border transition-colors ${
-                    isDark
-                      ? 'bg-white/5 text-slate-300 border-white/5 group-hover:border-white/10'
-                      : 'bg-slate-200 text-slate-700 border-slate-300 group-hover:border-slate-400'
-                  }`}>
+                  <span key={t} className="text-xs px-2.5 py-1 rounded-md border transition-colors bg-slate-200 text-slate-700 border-slate-300 group-hover:border-slate-400 dark:bg-white/5 dark:text-slate-300 dark:border-white/5 dark:group-hover:border-white/10">
                     {t}
                   </span>
                 ))}

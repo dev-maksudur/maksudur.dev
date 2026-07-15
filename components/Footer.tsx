@@ -3,25 +3,17 @@
 import Link from "next/link";
 import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
-import { useTheme } from "./ThemeProvider";
 
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com/valiantboymaksud" },
   { name: "LinkedIn", icon: Linkedin, href: "http://linkedin.com/in/maksudur-dev" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
-  { name: "Email", icon: Mail, href: "mailto:valiantmaksud@gmail.com" },
+  { name: "Email", icon: Mail, href: "mailto:maksudur.dev02@gmail.com" },
 ];
 
 export default function Footer() {
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
-
   return (
-    <footer className={`w-full py-6 px-3 transition-colors ${
-      isDark 
-        ? 'bg-[#0B1120] text-slate-400' 
-        : 'bg-slate-50 text-slate-600'
-    }`}>
+    <footer className="w-full py-6 px-3 transition-colors bg-slate-50 text-slate-600 dark:bg-[#0B1120] dark:text-slate-400">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-6">
           {/* Brand Section */}
@@ -45,11 +37,7 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-2.5 rounded-xl transition-all ${
-                      isDark
-                        ? 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800 hover:border-blue-500/50'
-                        : 'bg-white text-slate-600 hover:text-blue-600 border border-slate-200 hover:border-blue-500/50'
-                    }`}
+                    className="p-2.5 rounded-xl transition-all bg-white text-slate-600 hover:text-blue-600 border border-slate-200 hover:border-blue-500/50 dark:bg-slate-900 dark:text-slate-400 dark:hover:text-white dark:border-slate-800 dark:hover:border-blue-500/50"
                   >
                     <Icon size={20} />
                   </a>
@@ -60,7 +48,7 @@ export default function Footer() {
 
           {/* Availability & Contact */}
           <div className="col-span-1">
-            <h4 className={`text-sm font-black uppercase tracking-widest mb-6 ${isDark ? 'text-slate-300' : 'text-slate-900'}`}>
+            <h4 className="text-sm font-black uppercase tracking-widest mb-6 text-slate-900 dark:text-slate-300">
               Availability
             </h4>
             <div className="space-y-4">
@@ -84,7 +72,7 @@ export default function Footer() {
 
           {/* Quick Links / Location */}
           <div className="col-span-1">
-            <h4 className={`text-sm font-black uppercase tracking-widest mb-6 ${isDark ? 'text-slate-300' : 'text-slate-900'}`}>
+            <h4 className="text-sm font-black uppercase tracking-widest mb-6 text-slate-900 dark:text-slate-300">
               Location
             </h4>
             <p className="text-sm mb-2">Dhaka, Bangladesh</p>
@@ -93,15 +81,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className={`pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-6 ${
-          isDark ? 'border-slate-800' : 'border-slate-200'
-        }`}>
+        <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-6 border-slate-200 dark:border-slate-800">
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-500">
             <p>&copy; {new Date().getFullYear()} Maksudur Rahman</p>
             <span className="hidden md:block w-1 h-1 rounded-full bg-slate-700"></span>
             <p>All Rights Reserved</p>
           </div>
-          
+
           <div className="text-[10px] font-bold tracking-widest text-slate-500 flex flex-col md:flex-row items-center gap-1">
             <span>Principal Engineer at</span>
             <a

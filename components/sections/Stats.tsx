@@ -2,7 +2,6 @@
 
 import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { useTheme } from "@/components/ThemeProvider";
 
 const stats = [
   { label: "Years Experience", value: 5 },
@@ -26,8 +25,6 @@ function Counter({ label, value }: { label: string; value: number }) {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const [count, setCount] = useState(0);
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
 
   useEffect(() => {
     if (isInView) {
@@ -48,9 +45,7 @@ function Counter({ label, value }: { label: string; value: number }) {
 
   return (
     <div ref={ref} className="text-center">
-      <h3 className={`text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b ${
-        isDark ? 'from-white to-slate-400' : 'from-slate-900 to-slate-600'
-      }`}>
+      <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-slate-900 to-slate-600 dark:from-white dark:to-slate-400">
         {count}+
       </h3>
       <p className="text-blue-500 dark:text-blue-400 font-medium mt-2 uppercase tracking-widest text-xs sm:text-sm">{label}</p>

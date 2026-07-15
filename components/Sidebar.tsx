@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  Menu, X, Github, Linkedin, Mail, Briefcase, User, FolderOpen, 
+import {
+  Menu, X, Github, Linkedin, Mail, Briefcase, User, FolderOpen,
   Sun, Moon, Home
 } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
@@ -40,7 +40,7 @@ export default function Sidebar() {
     const handleScroll = () => {
       const sectionItems = navItems.filter((item) => item.href.startsWith("#"));
       let current = "";
-      
+
       sectionItems.forEach((item) => {
         const element = document.querySelector(item.href);
         if (element instanceof HTMLElement) {
@@ -52,7 +52,7 @@ export default function Sidebar() {
       });
       setActiveSection(current);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -64,9 +64,9 @@ export default function Sidebar() {
         {/* Profile */}
         <Link href="/" className="flex items-center gap-3 mb-10 group">
           <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-500/50 group-hover:ring-blue-500 transition-all shadow-lg">
-            <img 
-              src="https://kodersolution.com/assets/frontend/img/author/img.webp?format=webp" 
-              alt="Maksudur Rahman" 
+            <img
+              src="/images/maksudur.png"
+              alt="Maksudur Rahman"
               className="object-cover w-full h-full"
             />
           </div>
@@ -127,14 +127,14 @@ export default function Sidebar() {
             <a href="http://linkedin.com/in/maksudur-dev" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
               <Linkedin size={18} />
             </a>
-            <a href="mailto:valiantmaksud@gmail.com" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            <a href="mailto:maksudur.dev02@gmail.com" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
               <Mail size={18} />
             </a>
           </div>
-          
+
           {/* Theme Toggle Button */}
-          <button 
-            onClick={toggleTheme} 
+          <button
+            onClick={toggleTheme}
             className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-yellow-400 transition-all"
             aria-label="Toggle Dark Mode"
           >
@@ -161,7 +161,7 @@ export default function Sidebar() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-8 h-8 rounded-full overflow-hidden ring-1 ring-blue-500/30 group-hover:ring-blue-500 transition-all">
             <img
-              src="https://kodersolution.com/assets/frontend/img/author/img.webp?format=webp"
+              src="/images/maksudur.png"
               alt="Maksudur Rahman"
               className="object-cover w-full h-full"
             />

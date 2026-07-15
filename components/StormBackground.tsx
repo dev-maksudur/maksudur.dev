@@ -136,7 +136,7 @@ export default function StormBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className={`fixed top-0 left-0 w-full h-full -z-10 pointer-events-none ${theme === 'dark' ? 'bg-[#0B1120]' : 'bg-white'}`}
+      className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none bg-white dark:bg-[#0B1120]"
     />
   );
 }

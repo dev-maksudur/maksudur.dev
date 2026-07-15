@@ -7,24 +7,21 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { FadeIn } from "../ui/framer-wrapper";
-import { useTheme } from "@/components/ThemeProvider";
 import { projects } from "@/lib/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 
 export default function Projects() {
   const swiperRef = useRef<any>(null);
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
 
   return (
     <section id="projects" className="py-16 px-4 relative max-w-7xl mx-auto overflow-hidden">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <FadeIn>
           <div className="space-y-2">
-            <h2 className={`text-[10px] font-black uppercase tracking-[0.3em] ${isDark ? 'text-blue-400' : 'text-blue-600'}`}>
+            <h2 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
               Portfolio
             </h2>
-            <h3 className={`text-3xl md:text-5xl font-black tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
+            <h3 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
               Selected <span className="text-blue-500">Work</span>
             </h3>
           </div>
@@ -33,22 +30,14 @@ export default function Projects() {
         <div className="flex gap-2 sm:gap-3">
           <button 
             onClick={() => swiperRef.current?.slidePrev()} 
-            className={`group p-3 sm:p-4 rounded-full transition-all border ${
-              isDark
-                ? 'bg-slate-900 border-slate-800 hover:border-blue-500 text-slate-400 hover:text-white'
-                : 'bg-white border-slate-200 hover:border-blue-500 text-slate-600 hover:text-blue-600'
-            }`}
+            className="group p-3 sm:p-4 rounded-full transition-all border bg-white border-slate-200 hover:border-blue-500 text-slate-600 hover:text-blue-600 dark:bg-slate-900 dark:border-slate-800 dark:hover:border-blue-500 dark:text-slate-400 dark:hover:text-white"
             aria-label="Previous Slide"
           >
             <ArrowLeft size={20} className="sm:w-6 sm:h-6 group-hover:-translate-x-1 transition-transform" />
           </button>
           <button 
             onClick={() => swiperRef.current?.slideNext()} 
-            className={`group p-3 sm:p-4 rounded-full transition-all border ${
-              isDark
-                ? 'bg-slate-900 border-slate-800 hover:border-blue-500 text-slate-400 hover:text-white'
-                : 'bg-white border-slate-200 hover:border-blue-500 text-slate-600 hover:text-blue-600'
-            }`}
+            className="group p-3 sm:p-4 rounded-full transition-all border bg-white border-slate-200 hover:border-blue-500 text-slate-600 hover:text-blue-600 dark:bg-slate-900 dark:border-slate-800 dark:hover:border-blue-500 dark:text-slate-400 dark:hover:text-white"
             aria-label="Next Slide"
           >
             <ArrowRight size={20} className="sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
