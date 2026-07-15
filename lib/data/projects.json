@@ -1,0 +1,178 @@
+[
+  {
+    "id": "payment-gateway",
+    "title": "Payment Gateway Integration",
+    "desc": "Payment routing system with direct integrations to major local banking networks.",
+    "overview": "A transaction-heavy backend service built to route payments directly to local banking systems, featuring transaction checks, webhook sequencing, and automated reconciliation.",
+    "tech": ["PHP", "Laravel", "MySQL", "Redis", "Docker"],
+    "image": "",
+    "category": "Fintech",
+    "role": "Lead Developer",
+    "duration": "2023 - Present",
+    "challenges": [
+      "Lock contention and double-payment bugs under highly concurrent callbacks.",
+      "Varying and inconsistent response formats from different bank endpoints.",
+      "Out-of-order webhook delivery causing transaction state corruption."
+    ],
+    "solutions": [
+      "Implemented distributed locking using Redis to block duplicate callbacks.",
+      "Built a normalized adapter layer to standardize all incoming API payloads.",
+      "Designed a database transaction logging queue to enforce state transitions."
+    ],
+    "impact": "Successfully handled payment callbacks for thousands of daily checkouts with zero duplicate payments and an average routing latency under 200ms."
+  },
+  {
+    "id": "school",
+    "title": "School ERP Portal",
+    "desc": "School administration system managing academic calendars, attendance, and reporting.",
+    "overview": "An all-in-one portal managing student life cycles from registration and class scheduling to automated report card generation.",
+    "tech": ["PHP", "Laravel", "MySQL", "Livewire", "Alpine.js"],
+    "image": "",
+    "category": "Education",
+    "role": "Software Engineer",
+    "duration": "2022 - 2023",
+    "challenges": [
+      "Generating high-volume PDF report cards on demand during finals week, causing server timeouts.",
+      "Designing complex multi-class schedule matrices without room or teacher collisions.",
+      "Slow loading student profile histories containing attendance and grading tables."
+    ],
+    "solutions": [
+      "Offloaded PDF generation tasks to a distributed background worker queue.",
+      "Developed a custom scheduling validation engine to block booking conflicts.",
+      "Optimized query paths and introduced eager-loading for relationships."
+    ],
+    "impact": "Successfully deployed in multiple schools, reducing final-term reporting overhead from several days to a few hours."
+  },
+  {
+    "id": "hrm",
+    "title": "HRM & Payroll Engine",
+    "desc": "Human resource management platform managing employee records, attendance, and payroll.",
+    "overview": "A payroll-focused HRM engine that handles work shifts, salary disbursement, tax deductions, and compliance records.",
+    "tech": ["Laravel", "MySQL", "jQuery", "Bootstrap"],
+    "image": "",
+    "category": "Enterprise",
+    "role": "Backend Lead",
+    "duration": "2020 - 2021",
+    "challenges": [
+      "Custom calculations for shifts, overtime, holidays, and employee tax variables.",
+      "Keeping sensitive payroll and salary information encrypted yet searchable by managers.",
+      "Slow report queries running over thousands of active employee records."
+    ],
+    "solutions": [
+      "Built a custom payroll engine utilizing dynamic formula evaluators.",
+      "Implemented column-level AES database encryption combined with blind index search.",
+      "Created materialized views and query optimization structures to cache reports."
+    ],
+    "impact": "Automated payroll calculations, ensuring zero calculation errors and cutting pay processing time by 75%."
+  },
+  {
+    "id": "garments-erp",
+    "title": "Garments ERP System",
+    "desc": "Specialized supply chain and production tracking system for textile manufacturing.",
+    "overview": "A garment production manager tracking raw material supply, dye inventory, sewing line capacity, and shipment milestones.",
+    "tech": ["Laravel", "MySQL", "jQuery", "Bootstrap"],
+    "image": "",
+    "category": "Manufacturing",
+    "role": "System Architect",
+    "duration": "2022 - 2023",
+    "challenges": [
+      "Tracking item quantities across multiple sub-assembly stages without lag.",
+      "Dealing with unpredictable changes in dye and fabric inventory levels.",
+      "Integrating external logistics tracking data with interior assembly pipelines."
+    ],
+    "solutions": [
+      "Designed a visual Kanban production board powered by web sockets.",
+      "Created a multi-warehouse inventory module utilizing double-entry inventory patterns.",
+      "Developed an API connector to sync shipment statuses with international carriers."
+    ],
+    "impact": "Improved supply chain visibility, lowering material waste by 18% and cutting production delivery delays."
+  },
+  {
+    "id": "pos",
+    "title": "Point of Sale (POS)",
+    "desc": "Retail POS system featuring offline transactions and central inventory syncing.",
+    "overview": "A retail cash register application that operates offline and automatically syncs local transactions back to the cloud when internet returns.",
+    "tech": ["PHP", "Laravel", "MySQL", "jQuery"],
+    "image": "",
+    "category": "Inventory System",
+    "role": "Full Stack Engineer",
+    "duration": "2021 - 2022",
+    "challenges": [
+      "Synchronizing multi-outlet transactions with central inventory without data loss.",
+      "Keeping transaction latency below 100ms on low-spec client hardware.",
+      "Directly interfacing with POS receipt printers and barcode scanners on the browser client."
+    ],
+    "solutions": [
+      "Built a local-first browser IndexedDB structure that queues sync events.",
+      "Optimized React state renders and query paths to run efficiently on low-spec PCs.",
+      "Designed a modular client-side printer driver communicating via native browser print APIs."
+    ],
+    "impact": "Deployed across dozens of checkout lanes, maintaining 99.9% inventory sync accuracy even during local internet dropouts."
+  },
+  {
+    "id": "kodersolution",
+    "title": "Kodersolution.Com",
+    "desc": "Custom scheduling and client management dashboard for software development agencies.",
+    "overview": "A bespoke client portal designed to handle custom bookings, asset delivery, and multi-tier billing structures for active software consultancy agencies.",
+    "tech": ["Next.js", "MySQL", "Tailwind CSS", "Laravel", "Docker"],
+    "image": "",
+    "category": "Web Application",
+    "role": "Lead Developer",
+    "duration": "2024 - 2025",
+    "challenges": [
+      "Handling multi-timezone meeting scheduling and confirmation conflicts.",
+      "Secure client file transfers and digital asset delivery with signed URLs.",
+      "Custom payment splitting between contractors and platform owners."
+    ],
+    "solutions": [
+      "Built a temporal booking engine using database-level availability locks.",
+      "Integrated AWS S3 signed policies and CloudFront for fast asset downloads.",
+      "Developed custom billing logic mapping Stripe split transfers."
+    ],
+    "impact": "Reduced support desk tickets by 60% and successfully automated invoice generation for hundreds of contract items."
+  },
+  {
+    "id": "money-management",
+    "title": "Money Management App",
+    "desc": "Personal ledger and budget tracker featuring receipt parsing and double-entry book balancing.",
+    "overview": "A privacy-first mobile/web financial ledger offering real-time budget forecasting, bank feed integrations, and OCR-based receipt categorization.",
+    "tech": ["Next.js", "MySQL", "Laravel", "Tailwind CSS"],
+    "image": "",
+    "category": "Finance",
+    "role": "Full Stack Engineer",
+    "duration": "2024 - 2024",
+    "challenges": [
+      "Achieving secure, automated bank account transaction syncing.",
+      "Parsing unstructured physical receipt images accurately and quickly.",
+      "Ensuring mathematical balance reconciliation for multi-currency accounts."
+    ],
+    "solutions": [
+      "Integrated with Plaid API and designed double-entry ledger database models.",
+      "Utilized OCR pipelines and lightweight NLP parsing for transaction categorization.",
+      "Built transactional ledger engines with atomic operations to prevent imbalances."
+    ],
+    "impact": "Helped users categorize over $500k in personal transactions with receipt match rates exceeding 92%."
+  },
+  {
+    "id": "sportslover",
+    "title": "Sportslover.Live",
+    "desc": "Real-time sports blogging and match score tracking platform.",
+    "overview": "A live-syncing sports coverage platform delivering real-time match events, live commentary feeds, and custom blogging capabilities for active sports fans.",
+    "tech": ["Next.js", "Laravel", "Tailwind CSS", "MySQL"],
+    "image": "",
+    "category": "Sports Blog",
+    "role": "Full Stack Developer",
+    "duration": "2024 - 2025",
+    "challenges": [
+      "Caching live match updates to avoid database query surges during peak viewership.",
+      "Delivering immediate event alerts and commentary to thousands of active browser sessions.",
+      "Maintaining responsive layouts for dynamic data widgets on mobile connections."
+    ],
+    "solutions": [
+      "Configured Redis cache stores to buffer live match statistics and score states.",
+      "Integrated Pusher and Laravel Echo WebSocket clients to stream match events without HTTP polling.",
+      "Built lightweight, performance-tuned UI widgets using Next.js client components."
+    ],
+    "impact": "Successfully launched and scaled to serve live game updates within 1 second of occurrence to thousands of active monthly users."
+  }
+]

@@ -15,20 +15,20 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Software Engineer / Team Lead",
-    company: "SoftRobotics Bangladesh",
-    period: "2023 - Present",
-    location: "Dhaka, Bangladesh",
-    description: "Leading fintech product development with direct bank integrations and high-volume payment systems. Implemented structured error mapping for fraud analysis, optimized payment processing, and designed backup strategies for critical transaction tables. Working directly with clients and stakeholders to deliver reliable systems handling 1M+ daily transactions smoothly. Leading engineering teams through sprint planning and architecture reviews.",
-    skills: ["Fintech", "System Design", "PHP", "Laravel", "MySQL", "PgSQL", "Team Leadership"],
+    role: "Software Engineer",
+    company: "Softrobotics Bangladesh Ltd",
+    period: "May, 2023 - Present",
+    location: "West Dhanmondi, Dhaka, Bangladesh",
+    description: "Designed & Developed advanced payment gateway solutions tailored for the Turkish fintech ecosystem. Implemented provider error mapping to enhance transaction reliability and reduce failures. Developed cashback and rewards programs to drive user engagement. Streamlined onboarding of new banks, expanding available payment methods and increasing transaction flexibility. Optimized transaction efficiency and enhanced the digital wallet experience for end-users.",
+    skills: ["PHP", "Laravel", "Javascript", "Vue.js", "MySQL", "PostgreSQL", "Fintech", "Payment Gateways", "API Integration", "Redis", "Docker"],
   },
   {
     role: "Software Engineer",
     company: "Smart Software Ltd",
-    period: "2020 - 2023",
+    period: "Nov, 2020 - April, 2023",
     location: "Dhaka, Bangladesh",
-    description: "Developed multiple client-facing solutions including HRM, POS, Procurement Management, and Garments ERP systems. Delivered small to mid-scale production systems for real business clients, contributing to requirement analysis, development, deployment, and ongoing technical support.",
-    skills: ["ERP Systems", "PHP", "Laravel", "MySQL", "React.Js"],
+    description: "Built core backend modules for Human Resource Management (HRM) including payroll optimization, Provident Fund management, and third-party attendance integration via event listeners. Developed Procurement Management modules covering requisition workflows, market surveys, and inventory control & optimization. Worked on Garments ERP, Smart Dokan, Hospital and Doctor Management systems.",
+    skills: ["PHP", "Laravel", "MySQL", "ERP Systems", "HRM & Payroll", "Procurement", "Inventory Control", "Git"],
   }
 ];
 

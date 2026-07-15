@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, Target, Zap, Shield, Code2, Rocket } from "lucide-react";
+import ProjectVisual from "@/components/ui/ProjectVisual";
 
 export default function ProjectDetailContent({ project }: { project: any }) {
   return (
@@ -50,7 +51,7 @@ export default function ProjectDetailContent({ project }: { project: any }) {
               </div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-2">Sector</p>
-                <p className="font-bold text-slate-900 dark:text-white">Enterprise Software</p>
+                <p className="font-bold text-slate-900 dark:text-white">{project.category}</p>
               </div>
             </div>
           </motion.div>
@@ -62,12 +63,8 @@ export default function ProjectDetailContent({ project }: { project: any }) {
             className="relative"
           >
             <div className="absolute -inset-4 bg-blue-500/10 blur-3xl rounded-full opacity-50"></div>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800">
-              <img 
-                src={project.image || "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200"} 
-                alt={project.title} 
-                className="w-full h-auto"
-              />
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 h-64 sm:h-80 md:h-96 p-4 bg-slate-50 dark:bg-slate-950/40">
+              <ProjectVisual projectId={project.id} image={project.image} title={project.title} />
             </div>
           </motion.div>
         </div>

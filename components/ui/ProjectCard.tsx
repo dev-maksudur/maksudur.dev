@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Project } from "@/lib/data/projects";
+import ProjectVisual from "@/components/ui/ProjectVisual";
 
 interface ProjectCardProps {
   project: Project;
@@ -17,15 +18,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       className="h-full group"
     >
       <div className="h-full flex flex-col rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
-        {/* Image Container */}
-        <div className="relative h-56 overflow-hidden">
-          <div className="absolute inset-0 bg-blue-600/10 group-hover:bg-transparent transition-colors z-10"></div>
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-          />
-          <div className="absolute top-4 left-4 z-20">
+        {/* Image Container / Mockup Frame */}
+        <div className="relative h-56 overflow-hidden p-3 bg-slate-50 dark:bg-slate-950/40 border-b border-slate-100 dark:border-slate-800/80">
+          <ProjectVisual projectId={project.id} image={project.image} title={project.title} />
+          <div className="absolute top-5 left-5 z-20">
             <span className="px-3 py-1 bg-blue-600 text-white text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg">
               {project.category}
             </span>

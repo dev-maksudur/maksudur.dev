@@ -15,16 +15,13 @@ export default function Hero() {
           </span>
         </FadeIn>
 
-        <FadeIn delay={0.2}>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 transition-colors leading-[1.1] text-slate-900 dark:text-white">
-            Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 drop-shadow-none dark:drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">Scalable</span> <br />
-            Enterprise Systems
-          </h1>
-        </FadeIn>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 transition-colors leading-[1.1] text-slate-900 dark:text-white">
+          Laravel Developer for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 drop-shadow-none dark:drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">Web Applications</span>, APIs & Payment Solutions
+        </h1>
 
         <FadeIn delay={0.3}>
-          <p className="text-base sm:text-lg md:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed transition-colors text-slate-600 dark:text-slate-400">
-            Software Engineer crafting robust fintech solutions and scalable architecture.
+          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-relaxed transition-colors text-slate-600 dark:text-slate-400 font-normal">
+            Experienced Laravel Developer and PHP Software Engineer specializing in scalable web applications, payment gateway integrations, REST APIs, fintech solutions, and React frontends. Available for freelance, contract, and remote development projects.
           </p>
         </FadeIn>
 

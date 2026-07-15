@@ -23,16 +23,14 @@ export default function Intro() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold mb-6 transition-colors text-slate-900 dark:text-white">
-            Engineering Scalable Systems for <span className="text-blue-500">Real-World Impact</span>
+            High-Performance Backend Development & <span className="text-blue-500">Fintech Integrations</span>
           </h2>
           <div className="space-y-4 leading-relaxed text-lg transition-colors text-slate-700 dark:text-slate-300">
             <p>
-              I am a Software Engineer dedicated to building robust, high-performance applications. 
-              My expertise lies in transforming complex business requirements into scalable software architectures.
+              I am a dedicated <strong>PHP Software Engineer</strong> and <strong>Laravel Developer</strong> based in Dhaka, Bangladesh. I specialize in building high-throughput systems, custom <strong>REST APIs</strong>, and integrating robust <strong>payment gateway solutions</strong>.
             </p>
             <p>
-              Whether it's optimizing payment gateways for high concurrency or designing secure backend systems, 
-              I bring a focus on code quality, maintainability, and measurable business value.
+              As a seasoned <strong>Laravel payment gateway developer</strong>, <strong>React Laravel freelancer</strong>, and <strong>Telegram Mini App developer</strong>, I focus on delivering scalable, secure, and modern web architectures. From double-entry inventory structures to secure webhook handlers, I optimize every layer of the system.
             </p>
           </div>
           <div className="mt-8">

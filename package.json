@@ -1,11 +1,12 @@
 {
-  "name": "crypto-blog",
+  "name": "maksudur-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "add-project": "node scripts/add-project.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

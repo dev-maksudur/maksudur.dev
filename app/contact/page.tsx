@@ -1,11 +1,11 @@
-import MainLayout from "@/components/MainLayout";
-import ContactSection from "@/components/sections/Contact"; // Reusing existing logic if preferred, or new below
 import { FadeIn } from "@/components/ui/framer-wrapper";
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Globe } from "lucide-react";
+import ContactForm from "@/components/sections/ContactForm";
+import { Suspense } from "react";
 
 export const metadata = {
-  title: "Contact Me | Portfolio",
-  description: "Get in touch for freelance opportunities or project inquiries.",
+  title: "Contact Me | Maksudur Rahman",
+  description: "Get in touch for freelance, contract, or full-time remote engineering opportunities.",
 };
 
 export default function ContactPage() {
@@ -115,55 +115,21 @@ export default function ContactPage() {
         </FadeIn>
 
         {/* Right Side: Contact Form */}
-        <FadeIn delay={0.2}>
-          <div className="bg-white/5 border border-white/10 p-8 rounded-2xl sticky top-24">
-            <h2 className="text-2xl font-bold text-white mb-6">Send a Message</h2>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-300">Name</label>
-                  <input
-                    type="text"
-                    placeholder="John Doe"
-                    className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-300">Email</label>
-                  <input
-                    type="email"
-                    placeholder="john@company.com"
-                    className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                  />
-                </div>
+        <FadeIn delay={0.2} className="sticky top-24">
+          <Suspense fallback={
+            <div className="bg-white/5 border border-white/10 p-8 rounded-2xl animate-pulse space-y-6">
+              <div className="h-8 bg-slate-800 rounded w-1/3"></div>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="h-12 bg-slate-800 rounded"></div>
+                <div className="h-12 bg-slate-800 rounded"></div>
               </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300">Subject</label>
-                <input
-                  type="text"
-                  placeholder="Project Inquiry"
-                  className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300">Message</label>
-                <textarea
-                  rows={5}
-                  placeholder="Tell me about your project..."
-                  className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 flex items-center justify-center gap-2"
-              >
-                Send Message <span className="text-lg">→</span>
-              </button>
-            </form>
-          </div>
+              <div className="h-12 bg-slate-800 rounded"></div>
+              <div className="h-32 bg-slate-800 rounded"></div>
+              <div className="h-12 bg-slate-800 rounded"></div>
+            </div>
+          }>
+            <ContactForm />
+          </Suspense>
         </FadeIn>
 
       </div>

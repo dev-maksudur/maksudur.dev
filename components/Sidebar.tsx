@@ -168,7 +168,11 @@ export default function Sidebar() {
           </div>
           <span className="font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">Maksudur Rahman</span>
         </Link>
-        <button onClick={() => setIsOpen(!isOpen)} className="text-slate-900 dark:text-white p-2 bg-slate-100 dark:bg-white/5 rounded-lg hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
+        <button 
+          onClick={() => setIsOpen(!isOpen)} 
+          aria-label={isOpen ? "Close Menu" : "Open Menu"}
+          className="text-slate-900 dark:text-white p-2 bg-slate-100 dark:bg-white/5 rounded-lg hover:bg-slate-200 dark:hover:bg-white/10 transition-colors"
+        >
           {isOpen ? <X /> : <Menu />}
         </button>
       </header>

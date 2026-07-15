@@ -13,7 +13,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full py-6 px-3 transition-colors bg-slate-50 text-slate-600 dark:bg-[#0B1120] dark:text-slate-400">
+    <footer className="w-full py-6 px-3 transition-colors bg-slate-50 text-slate-700 dark:bg-[#0B1120] dark:text-slate-400">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-6">
           {/* Brand Section */}
@@ -22,11 +22,16 @@ export default function Footer() {
               <img
                 src="/images/logo-h.png"
                 alt="M.D Brand Logo"
+                width={196}
+                height={56}
                 className="h-14 w-auto object-contain"
               />
             </Link>
-            <p className="text-sm leading-relaxed max-w-sm mb-8">
+            <p className="text-sm leading-relaxed max-w-sm mb-2 text-slate-650 dark:text-slate-400">
               Engineering high-performance software solutions with a focus on scalability, security, and exceptional user experience.
+            </p>
+            <p className="text-xs text-slate-500 mb-6">
+              Based in Dhaka, Bangladesh • Available globally.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -37,7 +42,8 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl transition-all bg-white text-slate-600 hover:text-blue-600 border border-slate-200 hover:border-blue-500/50 dark:bg-slate-900 dark:text-slate-400 dark:hover:text-white dark:border-slate-800 dark:hover:border-blue-500/50"
+                    aria-label={`Maksudur's ${social.name} Profile`}
+                    className="p-2.5 rounded-xl transition-all bg-white text-slate-700 hover:text-blue-600 border border-slate-200 hover:border-blue-500/50 dark:bg-slate-900 dark:text-slate-300 dark:hover:text-white dark:border-slate-800 dark:hover:border-blue-500/50"
                   >
                     <Icon size={20} />
                   </a>
@@ -53,8 +59,8 @@ export default function Footer() {
             </h4>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-sm font-bold text-green-500">Open for new projects</span>
+                <div className="w-2 h-2 rounded-full bg-emerald-600 dark:bg-emerald-400 animate-pulse"></div>
+                <span className="text-sm font-bold text-emerald-700 dark:text-emerald-400">Open for new projects</span>
               </div>
               <p className="text-xs text-slate-500 uppercase tracking-widest">
                 Remote / Freelance / Full-time
@@ -62,7 +68,7 @@ export default function Footer() {
               <div className="pt-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 text-sm font-black text-blue-500 hover:text-blue-400 transition-all group"
+                  className="inline-flex items-center gap-2 text-sm font-black text-blue-700 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-all group"
                 >
                   Hire Me <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
@@ -70,13 +76,48 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links / Location */}
+          {/* Services Section */}
           <div className="col-span-1">
             <h4 className="text-sm font-black uppercase tracking-widest mb-6 text-slate-900 dark:text-slate-300">
-              Location
+              Services
             </h4>
-            <p className="text-sm mb-2">Dhaka, Bangladesh</p>
-            <p className="text-xs text-slate-500">Available globally via remote collaboration.</p>
+            <ul className="space-y-2.5 text-sm font-medium">
+              <li>
+                <Link href="/services/hire-laravel-developer" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+                  Hire Laravel Developer
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/hire-php-developer" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+                  Hire PHP Developer
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/payment-gateway-integration" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+                  Payment Gateways
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/telegram-mini-app-development" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+                  Telegram Mini Apps
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/laravel-api-development" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+                  API Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/react-laravel-development" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
+                  React & Laravel Dev
+                </Link>
+              </li>
+              <li className="pt-1.5">
+                <Link href="/services" className="text-blue-600 dark:text-blue-450 hover:text-blue-500 font-bold tracking-tight inline-flex items-center gap-1">
+                  View All Services <span className="text-xs">→</span>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -94,7 +135,7 @@ export default function Footer() {
               href="https://kodersolution.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 underline decoration-blue-500 decoration-2 underline-offset-2 hover:text-blue-400 transition-colors"
+              className="text-blue-700 dark:text-blue-400 underline decoration-blue-700 dark:decoration-blue-400 decoration-2 underline-offset-2 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
             >
               kodersolution.com
             </a>
