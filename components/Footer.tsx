@@ -27,11 +27,8 @@ export default function Footer() {
                 className="h-14 w-auto object-contain"
               />
             </Link>
-            <p className="text-sm leading-relaxed max-w-sm mb-2 text-slate-650 dark:text-slate-400">
+            <p className="text-sm leading-relaxed max-w-sm mb-8 text-slate-650 dark:text-slate-400">
               Engineering high-performance software solutions with a focus on scalability, security, and exceptional user experience.
-            </p>
-            <p className="text-xs text-slate-500 mb-6">
-              Based in Dhaka, Bangladesh • Available globally.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -76,48 +73,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services Section */}
+          {/* Quick Links / Location */}
           <div className="col-span-1">
             <h4 className="text-sm font-black uppercase tracking-widest mb-6 text-slate-900 dark:text-slate-300">
-              Services
+              Location
             </h4>
-            <ul className="space-y-2.5 text-sm font-medium">
-              <li>
-                <Link href="/services/hire-laravel-developer" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
-                  Hire Laravel Developer
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/hire-php-developer" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
-                  Hire PHP Developer
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/payment-gateway-integration" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
-                  Payment Gateways
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/telegram-mini-app-development" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
-                  Telegram Mini Apps
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/laravel-api-development" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
-                  API Development
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/react-laravel-development" className="text-slate-650 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 transition-colors">
-                  React & Laravel Dev
-                </Link>
-              </li>
-              <li className="pt-1.5">
-                <Link href="/services" className="text-blue-600 dark:text-blue-450 hover:text-blue-500 font-bold tracking-tight inline-flex items-center gap-1">
-                  View All Services <span className="text-xs">→</span>
-                </Link>
-              </li>
-            </ul>
+            <p className="text-sm mb-2 text-slate-800 dark:text-slate-300">Dhaka, Bangladesh</p>
+            <p className="text-xs text-slate-500">Available globally via remote collaboration.</p>
           </div>
         </div>
 

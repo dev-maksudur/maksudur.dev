@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services | Laravel Developer & PHP Software Engineer | Maksudur.dev",
+  title: "Services",
   description: "Explore professional software engineering services, including custom Laravel web applications, payment integrations, REST APIs, Telegram Mini Apps, and React full-stack solutions.",
   alternates: {
     canonical: "/services",
@@ -38,7 +38,7 @@ const getServiceIcon = (slug: string) => {
 
 export default function ServicesPage() {
   return (
-    <div className="py-12 max-w-5xl mx-auto pt-20 md:pt-10">
+    <div className="py-12 max-w-7xl mx-auto pt-20 md:pt-10">
       {/* Page Header */}
       <FadeIn>
         <div className="mb-12">

@@ -1,0 +1,66 @@
+# Maksudur Rahman - Laravel Developer & PHP Software Engineer
+
+Professional Software Engineer specializing in scalable web applications, payment gateway integrations, RESTful APIs, fintech solutions, and React.js frontends. Available for remote, contract, and freelance development.
+
+---
+
+## Contact Info
+- **Website**: https://maksudur.dev
+- **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
+- **Phone**: +880 1840 829429
+- **Location**: West Dhanmondi, Dhaka, Bangladesh
+- **GitHub**: https://github.com/valiantboymaksud
+- **LinkedIn**: http://linkedin.com/in/maksudur-dev
+
+---
+
+## Core Technical Skills
+
+- **Programming Languages**: PHP (8.x), JavaScript (ES6+), TypeScript, Python
+- **Frameworks & Libraries**: Laravel, React.js, Next.js, Vue.js, Livewire, Alpine.js, Symfony Components
+- **Databases & Cache**: MySQL, PostgreSQL, MongoDB, Redis
+- **DevOps & Infrastructure**: Docker, AWS (EC2, S3, CloudFront), Digital Ocean, Nginx, CI/CD (GitHub Actions), Linux Scripting
+- **Quality & Tools**: PHPUnit, SonarQube, Git, Jira, Trello, JWT Bearer Auth
+
+---
+
+## Work Experience
+
+### Softrobotics Bangladesh Ltd
+**Software Engineer** (May, 2023 - Present)
+- Designed and developed advanced payment gateway solutions tailored for the Turkish fintech ecosystem (Sipay).
+- Implemented provider error mapping layers to translate cryptic bank responses into unified API error responses, reducing checkout dropouts.
+- Built cashback and rewards programs to drive user engagement and loyalty.
+- Streamlined bank onboarding APIs, expanding available payment methods and transaction routing options.
+- Optimized transaction query loops, improving digital wallet efficiency.
+
+### Smart Software Ltd
+**Software Engineer** (November, 2020 - April, 2023)
+- Built Human Resource Management (HRM) systems, including biometric attendance listeners (PHP event-driven hooks), payroll engines, and Provident Fund deductions.
+- Developed Procurement and Multi-branch inventory tracking systems implementing double-entry reconciliation models.
+- Contributed to Garments ERP, local POS (Smart Dokan), and medical/hospital dashboard platforms.
+
+---
+
+## Core Projects
+
+1. **Sipay Fintech Integration** (https://sipay.com.tr)
+   - *Role*: Lead Developer. Advanced transaction routing, bank adapters, and error-mapping middlewares in PHP.
+2. **Kodersolution Portal** (https://kodersolution.com)
+   - *Role*: Lead Developer. Next.js & Laravel client portal featuring timezone booking locks, split-billing configurations, and secure AWS S3 asset delivery.
+3. **Sportslover.Live** (https://sportslover.live)
+   - *Role*: Full Stack Developer. Next.js sports coverage system displaying scores in real-time utilizing Pusher WebSockets and Laravel Echo background dispatches.
+4. **Smart Dokani** (https://www.smart-dokani.com)
+   - *Role*: Software Engineer. Multi-tenant retail POS inventory syncing engine with local-first IndexedDB caching.
+
+---
+
+## Engineering Services Offered
+
+- **Hire Laravel Developer**: Scalable enterprise web apps, custom packages, upgrades, and background job queue tuning.
+- **Hire PHP Developer**: OOP PHP development, custom MVC layouts, legacy spaghetti code refactoring, and PSR standards compliance.
+- **Hire Backend Developer**: Low-latency RESTful APIs, database schema normalization, and server dockerization.
+- **Payment Gateway Integration**: Multi-currency checkout integrations, bank APIs, dunning cycles, and transaction lock maps.
+- **Telegram Mini App Development**: Embedded React/Vite interfaces in Telegram, initData validation, and automated bot webhook listeners.
+- **Laravel API Development**: Token-based Sanctum/Passport OAuth2 setups, OpenAPI documentation, and rate limiters.
+- **React & Laravel Full-Stack**: Hybrid Next.js and Laravel systems, client state hydration, and Tailwind CSS design styling.

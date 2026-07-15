@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Experience from "@/components/sections/Experience";
 
 export const metadata: Metadata = {
-  title: "Experience | Maksudur Rahman",
+  title: "Experience",
   description: "Professional journey and work experience of Maksudur Rahman in software engineering and fintech.",
   alternates: {
     canonical: "/experience",

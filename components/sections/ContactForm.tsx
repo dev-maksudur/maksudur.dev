@@ -69,8 +69,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white/5 border border-white/10 p-8 rounded-2xl sticky top-24">
-      <h2 className="text-2xl font-bold text-white mb-6">Send a Message</h2>
+    <div className="bg-slate-50 border border-slate-200 dark:bg-white/5 dark:border-white/10 p-8 rounded-2xl sticky top-24">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Send a Message</h2>
       
       {isSuccess && (
         <div className="mb-6 p-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-lg flex items-center gap-3 text-sm">
@@ -88,46 +88,46 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <label className="text-sm font-medium text-slate-300">Name</label>
+            <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Name</label>
             <input
               type="text"
               {...register("name")}
               placeholder="John Doe"
-              className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-650 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              className="w-full bg-slate-100 border border-slate-200 dark:bg-[#0B1120] dark:border-white/10 rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-450 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             />
             {errors.name && <p className="text-red-400 text-xs">{errors.name.message}</p>}
           </div>
           
           <div className="space-y-2">
-            <label className="text-sm font-medium text-slate-300">Email</label>
+            <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Email</label>
             <input
               type="email"
               {...register("email")}
               placeholder="john@company.com"
-              className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-655 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              className="w-full bg-slate-100 border border-slate-200 dark:bg-[#0B1120] dark:border-white/10 rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-450 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             />
             {errors.email && <p className="text-red-400 text-xs">{errors.email.message}</p>}
           </div>
         </div>
 
         <div className="space-y-2">
-          <label className="text-sm font-medium text-slate-300">Subject</label>
+          <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Subject</label>
           <input
             type="text"
             {...register("subject")}
             placeholder="Project Inquiry"
-            className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-655 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+            className="w-full bg-slate-100 border border-slate-200 dark:bg-[#0B1120] dark:border-white/10 rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-450 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
           />
           {errors.subject && <p className="text-red-400 text-xs">{errors.subject.message}</p>}
         </div>
 
         <div className="space-y-2">
-          <label className="text-sm font-medium text-slate-300">Message</label>
+          <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Message</label>
           <textarea
             rows={5}
             {...register("message")}
             placeholder="Tell me about your project..."
-            className="w-full bg-[#0B1120] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-655 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+            className="w-full bg-slate-100 border border-slate-200 dark:bg-[#0B1120] dark:border-white/10 rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-450 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
           ></textarea>
           {errors.message && <p className="text-red-400 text-xs">{errors.message.message}</p>}
         </div>

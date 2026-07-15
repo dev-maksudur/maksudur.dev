@@ -121,13 +121,29 @@ export default function Sidebar() {
       <div className="px-6">
         <div className="flex gap-3 mb-4 items-center justify-between">
           <div className="flex gap-3">
-            <a href="https://github.com/valiantboymaksud" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            <a
+              href="https://github.com/valiantboymaksud"
+              aria-label="GitHub Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all"
+            >
               <Github size={18} />
             </a>
-            <a href="http://linkedin.com/in/maksudur-dev" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            <a
+              href="http://linkedin.com/in/maksudur-dev"
+              aria-label="LinkedIn Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all"
+            >
               <Linkedin size={18} />
             </a>
-            <a href="mailto:maksudur.dev02@gmail.com" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            <a
+              href="mailto:maksudur.dev02@gmail.com"
+              aria-label="Email Address"
+              className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all"
+            >
               <Mail size={18} />
             </a>
           </div>

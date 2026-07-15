@@ -74,7 +74,7 @@ export default async function ServiceDetailPage({
   }
 
   return (
-    <div className="py-12 max-w-5xl mx-auto pt-20 md:pt-10">
+    <div className="py-12 max-w-7xl mx-auto pt-20 md:pt-10">
       
       {/* Back to Services navigation */}
       <FadeIn>
