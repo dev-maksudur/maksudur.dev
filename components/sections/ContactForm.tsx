@@ -44,7 +44,7 @@ export default function ContactForm() {
     setErrorMessage(null);
     setIsSuccess(false);
     try {
-      const response = await fetch("https://api.kodersolution.com/api/contact-maksudur-dev", {
+      const response = await fetch("https://api.kodersolution.com/api/v1/contact-maksudur-dev", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

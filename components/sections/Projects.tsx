@@ -18,11 +18,11 @@ export default function Projects() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <FadeIn>
           <div className="space-y-2">
-            <h2 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
               Portfolio
             </h2>
-            <h3 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
-              Selected <span className="text-blue-500">Work</span>
+            <h3 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Selected <span className="text-blue-600 dark:text-blue-400">Work</span>
             </h3>
           </div>
         </FadeIn>

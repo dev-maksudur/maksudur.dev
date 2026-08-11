@@ -45,10 +45,10 @@ export default function ServicesPage() {
           <span className="inline-block py-1 px-3 rounded-full text-xs font-semibold tracking-wider uppercase mb-4 bg-blue-100 border border-blue-300 text-blue-700 dark:bg-blue-500/10 dark:border-blue-500/20 dark:text-blue-400">
             Expert Solutions
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight mb-6">
-            Custom Software <span className="text-blue-500">Services</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight mb-4">
+            Custom Software <span className="text-blue-600 dark:text-blue-400">Services</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-650 dark:text-slate-400 max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
             High-performance backend development, payment systems, and interactive full-stack integrations tailored to solve your business bottlenecks. Select a service to view experience, processes, and FAQs.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function ServicesPage() {
           <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl" />
           
-          <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">
             Need a custom solution or dedicated consultation?
           </h2>
           <p className="text-slate-650 dark:text-slate-450 max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">

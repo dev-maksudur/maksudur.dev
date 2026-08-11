@@ -103,7 +103,7 @@ export default function Contact() {
         <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-slate-400 text-sm mb-4">Prefer email?</p>
           <a href="mailto:email@example.com" className="text-blue-400 hover:text-blue-300 flex items-center justify-center gap-2 font-medium">
-            <Mail size={18} /> email@example.com
+            <Mail size={18} /> maksudur.dev02@gmail.com
           </a>
         </div>
       </motion.div>

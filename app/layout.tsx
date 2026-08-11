@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import MainLayout from "@/components/MainLayout";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-F3KCVWE6JS";
 
 export const metadata: Metadata = {
   title: {
@@ -64,6 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
+        <link rel="alternate" type="text/markdown" title="LLMs.txt" href="/llms.txt" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -78,6 +81,23 @@ export default function RootLayout({
             `,
           }}
         />
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body className={`${inter.className} bg-white dark:bg-[#0B1120] text-slate-900 dark:text-slate-200 antialiased selection:bg-blue-500 selection:text-white`}>
         <ThemeProvider>

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
 import { useTheme } from "./ThemeProvider";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const navItems = [
   { name: "Home", href: "/", icon: Home, isHash: false },
@@ -119,8 +120,17 @@ export default function Sidebar() {
 
       {/* Bottom Section: Socials, Theme Toggle, Copyright */}
       <div className="px-6">
-        <div className="flex gap-3 mb-4 items-center justify-between">
-          <div className="flex gap-3">
+        <div className="flex gap-2 mb-4 items-center justify-between">
+          <div className="flex gap-2">
+            <a
+              href="https://wa.me/maksudur.dev"
+              aria-label="WhatsApp Contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-emerald-500 dark:hover:text-emerald-400 transition-all"
+            >
+              <WhatsAppIcon size={18} />
+            </a>
             <a
               href="https://github.com/valiantboymaksud"
               aria-label="GitHub Profile"

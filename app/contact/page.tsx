@@ -1,5 +1,6 @@
 import { FadeIn } from "@/components/ui/framer-wrapper";
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Globe } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import ContactForm from "@/components/sections/ContactForm";
 import { Suspense } from "react";
 
@@ -44,6 +45,21 @@ export default function ContactPage() {
                   </div>
                 </a>
 
+                <a 
+                  href="https://wa.me/maksudur.dev" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-4 text-slate-700 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 transition-colors group"
+                >
+                  <div className="p-3 bg-slate-100 dark:bg-white/5 rounded-lg group-hover:bg-emerald-500/10 transition-colors">
+                    <WhatsAppIcon size={20} className="text-emerald-500" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-500 uppercase tracking-wider">WhatsApp</p>
+                    <p className="font-medium">maksudur.dev</p>
+                  </div>
+                </a>
+
                 <div className="flex items-center gap-4 text-slate-700 dark:text-slate-300">
                   <div className="p-3 bg-slate-100 dark:bg-white/5 rounded-lg">
                     <MapPin size={20} />
@@ -70,6 +86,16 @@ export default function ContactPage() {
             <div className="bg-slate-50 border border-slate-200 dark:bg-white/5 dark:border-white/10 p-6 rounded-2xl">
               <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Connect with Me</h2>
               <div className="grid grid-cols-2 gap-4">
+                <a
+                  href="https://wa.me/maksudur.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-slate-100 hover:bg-slate-200 border border-slate-200 hover:border-slate-300 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/5 dark:hover:border-emerald-500/30 rounded-xl transition-all hover:-translate-y-1 group"
+                >
+                  <WhatsAppIcon size={24} className="text-slate-550 group-hover:text-emerald-500 dark:text-slate-400 dark:group-hover:text-emerald-400 transition-colors" />
+                  <span className="font-medium text-slate-750 dark:text-slate-300 group-hover:text-slate-950 dark:group-hover:text-white">WhatsApp</span>
+                </a>
+
                 <a
                   href="https://github.com/valiantboymaksud"
                   target="_blank"
@@ -98,16 +124,6 @@ export default function ContactPage() {
                 >
                   <Twitter size={24} className="text-slate-550 group-hover:text-sky-500 dark:text-slate-400 dark:group-hover:text-sky-500 transition-colors" />
                   <span className="font-medium text-slate-750 dark:text-slate-300 group-hover:text-slate-950 dark:group-hover:text-white">Twitter</span>
-                </a>
-
-                <a
-                  href="https://kodersolution.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 bg-slate-100 hover:bg-slate-200 border border-slate-200 hover:border-slate-300 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/5 dark:hover:border-purple-500/30 rounded-xl transition-all hover:-translate-y-1 group"
-                >
-                  <Globe size={24} className="text-slate-550 group-hover:text-purple-500 dark:text-slate-400 dark:group-hover:text-purple-500 transition-colors" />
-                  <span className="font-medium text-slate-750 dark:text-slate-300 group-hover:text-slate-950 dark:group-hover:text-white">Portfolio</span>
                 </a>
               </div>
             </div>

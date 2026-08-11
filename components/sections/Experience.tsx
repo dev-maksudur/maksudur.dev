@@ -37,12 +37,12 @@ export default function Experience() {
     <section id="experience" className="py-12 px-3 sm:px-6 lg:px-8 bg-white dark:bg-black/20 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
         <FadeIn>
-          <div className="mb-6">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-slate-900 dark:text-white">
-              Professional <span className="text-blue-500">History</span>
+          <div className="mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-3 text-slate-900 dark:text-white">
+              Professional <span className="text-blue-600 dark:text-blue-400">History</span>
             </h2>
-            <div className="h-1.5 w-20 bg-blue-500 rounded-full mb-3" />
-            <p className="text-lg md:text-xl max-w-2xl text-slate-600 dark:text-slate-400">
+            <div className="h-1 w-16 bg-blue-500 rounded-full mb-3" />
+            <p className="text-base sm:text-lg max-w-2xl text-slate-600 dark:text-slate-300">
               My career journey as a software engineer, building impactful digital products and leading engineering teams.
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="grid grid-cols-1 md:grid-cols-[1fr_2.5fr] gap-6 md:gap-16 py-12 border-b border-slate-200 dark:border-slate-800/60 last:border-0"
+              className="grid grid-cols-1 md:grid-cols-[1fr_2.5fr] gap-6 md:gap-16 py-10 border-b border-slate-200 dark:border-slate-800/60 last:border-0"
             >
               {/* Left Column: Date & Company */}
               <div className="space-y-3">
@@ -64,7 +64,7 @@ export default function Experience() {
                   {exp.period}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold tracking-tight mb-1 text-slate-800 dark:text-slate-100">
+                  <h3 className="text-lg font-bold tracking-tight mb-1 text-slate-800 dark:text-slate-100">
                     {exp.company}
                   </h3>
                   <div className="flex items-center gap-1.5 text-xs font-medium text-slate-500">
@@ -75,10 +75,10 @@ export default function Experience() {
               </div>
 
               {/* Right Column: Role & Description */}
-              <div className="space-y-5">
-                <h4 className="text-2xl md:text-3xl font-black tracking-tight leading-tight text-slate-900 dark:text-white">
+              <div className="space-y-4">
+                <h3 className="text-xl md:text-2xl font-bold tracking-tight leading-tight text-slate-900 dark:text-white">
                   {exp.role}
-                </h4>
+                </h3>
                 <p className="text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400">
                   {exp.description}
                 </p>

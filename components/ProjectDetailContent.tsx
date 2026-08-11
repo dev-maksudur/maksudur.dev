@@ -29,29 +29,29 @@ export default function ProjectDetailContent({ project }: { project: any }) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="px-3 py-1 bg-blue-600/10 text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-widest rounded-full border border-blue-600/20">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="px-3 py-1 bg-blue-600/10 text-blue-600 dark:text-blue-400 text-xs font-semibold uppercase tracking-wider rounded-full border border-blue-600/20">
                 Case Study
               </span>
-              <span className="text-slate-400 dark:text-slate-500 text-sm font-medium">
+              <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">
                 {project.duration}
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight text-slate-900 dark:text-white mb-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
               {project.title}
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-10">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
               {project.overview}
             </p>
             
-            <div className="grid grid-cols-2 gap-8 py-8 border-y border-slate-100 dark:border-slate-800">
+            <div className="grid grid-cols-2 gap-6 py-6 border-y border-slate-200 dark:border-slate-800">
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-2">Role</p>
-                <p className="font-bold text-slate-900 dark:text-white">{project.role}</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-1">Role</p>
+                <p className="font-semibold text-slate-900 dark:text-white">{project.role}</p>
               </div>
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-2">Sector</p>
-                <p className="font-bold text-slate-900 dark:text-white">{project.category}</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-1">Sector</p>
+                <p className="font-semibold text-slate-900 dark:text-white">{project.category}</p>
               </div>
             </div>
           </motion.div>
@@ -120,8 +120,8 @@ export default function ProjectDetailContent({ project }: { project: any }) {
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Measured Impact</h2>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-900/50 p-10 rounded-3xl border border-slate-200 dark:border-slate-800">
-                <p className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white leading-tight mb-4 italic">
+              <div className="bg-slate-50 dark:bg-slate-900/50 p-8 sm:p-10 rounded-3xl border border-slate-200 dark:border-slate-800">
+                <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white leading-tight mb-4 italic">
                   "{project.impact}"
                 </p>
                 <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-bold uppercase tracking-widest text-xs">
@@ -151,15 +151,19 @@ export default function ProjectDetailContent({ project }: { project: any }) {
               </div>
               
               <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
-                <p className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4">Engagement</p>
-                <div className="space-y-2 text-sm">
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-4">Engagement & Ownership</p>
+                <div className="space-y-2.5 text-sm">
                   <p className="font-bold text-slate-900 dark:text-white flex justify-between">
-                    <span>Type</span>
-                    <span className="text-slate-500">Contract</span>
+                    <span>Ownership</span>
+                    <span className="text-blue-600 dark:text-blue-400 font-bold">{project.projectType === "Personal" ? "Core Product / Own" : `${project.projectType} Work`}</span>
                   </p>
                   <p className="font-bold text-slate-900 dark:text-white flex justify-between">
-                    <span>Year</span>
-                    <span className="text-slate-500">2024</span>
+                    <span>Role</span>
+                    <span className="text-slate-500 font-medium">{project.role}</span>
+                  </p>
+                  <p className="font-bold text-slate-900 dark:text-white flex justify-between">
+                    <span>Timeline</span>
+                    <span className="text-slate-500 font-medium">{project.duration}</span>
                   </p>
                 </div>
               </div>

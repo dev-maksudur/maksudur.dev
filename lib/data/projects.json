@@ -1,5 +1,51 @@
 [
   {
+    "id": "kodersolution",
+    "title": "Kodersolution.com",
+    "desc": "Full-stack developer platform and learning ecosystem featuring technical articles, programming tutorials, student resources, and community forums.",
+    "overview": "An interactive developer platform engineered to share high-quality technical articles, step-by-step programming tutorials, student learning tracks, and real-time community forums covering Laravel, React, Next.js, and system architecture.",
+    "tech": ["Next.js", "Laravel", "TypeScript", "Tailwind CSS", "MySQL", "Redis", "Docker"],
+    "image": "",
+    "category": "Developer Platform",
+    "projectType": "Personal",
+    "role": "Lead Engineer",
+    "duration": "2023 - Present",
+    "challenges": [
+      "Architecting a high-throughput content management and forum engine capable of handling concurrent student discussions and article reads.",
+      "Optimizing full-text search and real-time forum notifications for active developer threads.",
+      "Ensuring fast page load times and optimal SEO indexation for thousands of technical tutorials."
+    ],
+    "solutions": [
+      "Engineered a hybrid Server-Side Rendering (SSR) and Incremental Static Regeneration (ISR) system using Next.js and Laravel REST APIs.",
+      "Implemented Redis caching and optimized database indexing for instantaneous search results and thread updates.",
+      "Designed structured JSON-LD schemas and dynamic metadata pipelines to maximize SEO indexing and search visibility."
+    ],
+    "impact": "Grew into a primary learning hub for developers and engineering students, delivering real-time forum discussions, fast article searches, and thousands of monthly active readers."
+  },
+  {
+    "id": "peaklancer",
+    "title": "Peaklancer.com",
+    "desc": "Freelance services marketplace platform facilitating secure client-freelancer contracts, escrow payments, and service gigs.",
+    "overview": "A modern freelance services marketplace built to connect global businesses with skilled freelancers. Features digital service gigs, custom offer proposals, secure milestone payments, direct real-time chat, and automated order dispute handling.",
+    "tech": ["Laravel", "Livewire", "MySql", "Redis", "Tailwind CSS"],
+    "image": "",
+    "category": "Marketplace",
+    "projectType": "Client",
+    "role": "Full Stack Engineer",
+    "duration": "2024 - 6 months",
+    "challenges": [
+      "Building a multi-currency escrow payment engine with secure holding and payout verification.",
+      "Implementing instant real-time messaging and order attachment uploads between buyers and sellers.",
+      "Designing complex commission calculation and dispute resolution workflows."
+    ],
+    "solutions": [
+      "Engineered an automated payment escrow pipeline enforcing double-entry transaction checks before releasing funds.",
+      "Utilized WebSockets and Redis channels for instant messaging and order updates.",
+      "Developed a robust admin governance portal for managing gig moderation, order cancellations, and refunds."
+    ],
+    "impact": "Engineered a high-performing digital marketplace supporting seamless gig creation, real-time client communications, and secure payment processing."
+  },
+  {
     "id": "payment-gateway",
     "title": "Payment Gateway Integration",
     "desc": "Payment routing system with direct integrations to major local banking networks.",
@@ -7,6 +53,7 @@
     "tech": ["PHP", "Laravel", "MySQL", "Redis", "Docker"],
     "image": "",
     "category": "Fintech",
+    "projectType": "Company",
     "role": "Lead Developer",
     "duration": "2023 - Present",
     "challenges": [
@@ -29,8 +76,9 @@
     "tech": ["PHP", "Laravel", "MySQL", "Livewire", "Alpine.js"],
     "image": "",
     "category": "Education",
+    "projectType": "Client",
     "role": "Software Engineer",
-    "duration": "2022 - 2023",
+    "duration": "2025 - Present",
     "challenges": [
       "Generating high-volume PDF report cards on demand during finals week, causing server timeouts.",
       "Designing complex multi-class schedule matrices without room or teacher collisions.",
@@ -51,6 +99,7 @@
     "tech": ["Laravel", "MySQL", "jQuery", "Bootstrap"],
     "image": "",
     "category": "Enterprise",
+    "projectType": "Company",
     "role": "Backend Lead",
     "duration": "2020 - 2021",
     "challenges": [
@@ -73,6 +122,7 @@
     "tech": ["Laravel", "MySQL", "jQuery", "Bootstrap"],
     "image": "",
     "category": "Manufacturing",
+    "projectType": "Company",
     "role": "System Architect",
     "duration": "2022 - 2023",
     "challenges": [
@@ -95,6 +145,7 @@
     "tech": ["PHP", "Laravel", "MySQL", "jQuery"],
     "image": "",
     "category": "Inventory System",
+    "projectType": "Company",
     "role": "Full Stack Engineer",
     "duration": "2021 - 2022",
     "challenges": [
@@ -110,28 +161,6 @@
     "impact": "Deployed across dozens of checkout lanes, maintaining 99.9% inventory sync accuracy even during local internet dropouts."
   },
   {
-    "id": "kodersolution",
-    "title": "Kodersolution.Com",
-    "desc": "Custom scheduling and client management dashboard for software development agencies.",
-    "overview": "A bespoke client portal designed to handle custom bookings, asset delivery, and multi-tier billing structures for active software consultancy agencies.",
-    "tech": ["Next.js", "MySQL", "Tailwind CSS", "Laravel", "Docker"],
-    "image": "",
-    "category": "Web Application",
-    "role": "Lead Developer",
-    "duration": "2024 - 2025",
-    "challenges": [
-      "Handling multi-timezone meeting scheduling and confirmation conflicts.",
-      "Secure client file transfers and digital asset delivery with signed URLs.",
-      "Custom payment splitting between contractors and platform owners."
-    ],
-    "solutions": [
-      "Built a temporal booking engine using database-level availability locks.",
-      "Integrated AWS S3 signed policies and CloudFront for fast asset downloads.",
-      "Developed custom billing logic mapping Stripe split transfers."
-    ],
-    "impact": "Reduced support desk tickets by 60% and successfully automated invoice generation for hundreds of contract items."
-  },
-  {
     "id": "money-management",
     "title": "Money Management App",
     "desc": "Personal ledger and budget tracker featuring receipt parsing and double-entry book balancing.",
@@ -139,8 +168,9 @@
     "tech": ["Next.js", "MySQL", "Laravel", "Tailwind CSS"],
     "image": "",
     "category": "Finance",
+    "projectType": "Personal",
     "role": "Full Stack Engineer",
-    "duration": "2024 - 2024",
+    "duration": "2026 - Present",
     "challenges": [
       "Achieving secure, automated bank account transaction syncing.",
       "Parsing unstructured physical receipt images accurately and quickly.",
@@ -161,8 +191,9 @@
     "tech": ["Next.js", "Laravel", "Tailwind CSS", "MySQL"],
     "image": "",
     "category": "Sports Blog",
+    "projectType": "Personal",
     "role": "Full Stack Developer",
-    "duration": "2024 - 2025",
+    "duration": "2026 - Present",
     "challenges": [
       "Caching live match updates to avoid database query surges during peak viewership.",
       "Delivering immediate event alerts and commentary to thousands of active browser sessions.",

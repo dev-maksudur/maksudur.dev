@@ -1,0 +1,217 @@
+# Maksudur Rahman - Full Engineering Portfolio & Documentation
+
+> Senior Software Engineer specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech solutions, and Next.js / React full-stack architectures.
+
+---
+
+## 1. Professional Overview & Bio
+
+- **Name**: Maksudur Rahman
+- **Title**: Senior Software Engineer / Laravel & PHP Specialist
+- **Website**: https://maksudur.dev
+- **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
+- **WhatsApp**: https://wa.me/maksudur.dev
+- **GitHub**: https://github.com/valiantboymaksud
+- **LinkedIn**: http://linkedin.com/in/maksudur-dev
+- **Location**: West Dhanmondi, Dhaka, Bangladesh
+- **Status**: Available for global remote development contracts, full-time engineering roles, and consulting.
+
+### About Maksudur Rahman
+I am a seasoned PHP Software Engineer and Full-Stack Developer with over 5 years of professional experience crafting high-throughput, secure, and scalable web applications. My core expertise centers around modern Laravel (10/11), PHP 8.x, database optimization (MySQL/PostgreSQL/Redis), payment gateway integrations, RESTful API design, and Next.js / React user interfaces.
+
+Throughout my career in rapid-growth tech companies and enterprise projects, I have architected payment routing engines handling thousands of daily checkouts, built HRM & Payroll systems handling complex shift and tax logic, engineered offline-first Point of Sale platforms, and created full-stack platforms serving active developer communities.
+
+I adhere strictly to PSR standards, SOLID principles, Clean Architecture paradigms, and secure coding practices (column-level encryption, CSRF protection, rate limiting, and Sanctum/Passport auth).
+
+---
+
+## 2. Technical Capabilities & Tech Stack
+
+### Programming Languages & Core
+- **Languages**: PHP (8.0 - 8.3), JavaScript (ES6+), TypeScript, SQL, Python
+- **Backend Frameworks**: Laravel (10 & 11), Symfony Components, Laravel Livewire, Alpine.js, Node.js
+
+### Frontend Ecosystem
+- **Frameworks & Libraries**: React.js, Next.js (App Router, SSR, ISR, Static Export), Tailwind CSS, Framer Motion
+
+### Databases, Storage & Caching
+- **Relational Databases**: MySQL 8.x, PostgreSQL
+- **NoSQL & Cache**: Redis (Caching, Distributed Locking, Pub/Sub), MongoDB
+- **Client Storage**: IndexedDB (Local-first caching)
+
+### DevOps, Cloud & Infrastructure
+- **Containerization**: Docker, Docker Compose
+- **Cloud Providers**: AWS (EC2, S3, CloudFront), DigitalOcean, Nginx Web Server
+- **CI/CD & Tools**: GitHub Actions, Linux Shell Scripting, Git Version Control
+
+### Quality Assurance & Process
+- **Testing**: PHPUnit, Pest PHP, Integration & Unit Test Automation
+- **Code Quality**: SonarQube Quality Gates, PSR-12 Compliance, Static Analysis
+- **Methodology**: Agile / Scrum, Jira, Trello, Slack, Async Remote Standups
+
+---
+
+## 3. Professional Experience
+
+### Softrobotics Bangladesh Ltd
+**Role**: Software Engineer  
+**Duration**: May 2023 - Present  
+**Location**: Dhaka, Bangladesh  
+
+- Architected and deployed payment gateway integrations tailored for international and Turkish fintech ecosystems (e.g. Sipay).
+- Engineered normalized API error-mapping middleware to translate complex banking provider response codes into standardized JSON errors, drastically cutting checkout dropouts.
+- Built cashback and rewards loyalty calculation engines to boost platform user retention.
+- Optimized payment transaction query loops and Redis cache layers, maintaining sub-200ms API response latency.
+
+### Smart Software Ltd
+**Role**: Software Engineer  
+**Duration**: November 2020 - April 2023  
+**Location**: Dhaka, Bangladesh  
+
+- Built Human Resource Management (HRM) systems featuring biometric attendance hooks, automated shift evaluation engines, tax deductions, and Provident Fund logic.
+- Developed Procurement and Multi-branch inventory tracking modules utilizing double-entry accounting reconciliation models.
+- Contributed to Garments ERP manufacturing supply chain systems, retail POS platforms (Smart Dokan), and medical dashboard backends.
+
+---
+
+## 4. Portfolio Projects (Detailed Case Studies)
+
+### 1. Kodersolution Developer Platform
+- **URL**: https://maksudur.dev/projects/kodersolution/
+- **Role**: Lead Engineer | **Category**: Developer Platform | **Type**: Personal | **Duration**: 2023 - Present
+- **Tech Stack**: Next.js, Laravel, TypeScript, Tailwind CSS, MySQL, Redis, Docker
+- **Overview**: An interactive developer learning platform engineered to share high-quality technical articles, programming tutorials, student learning tracks, and real-time community forums covering Laravel, React, and system architecture.
+- **Key Challenges**: Handling concurrent student forum discussions; optimizing full-text searches across thousands of articles; maximizing SEO indexing.
+- **Engineering Solutions**: Implemented a hybrid Next.js SSR/ISR rendering pipeline backed by Laravel REST APIs; built Redis caching layers for instant search responses; configured structured JSON-LD schemas.
+- **Impact**: Serving thousands of monthly developer readers with fast thread loading and instant article searches.
+
+### 2. Peaklancer Freelance Marketplace
+- **URL**: https://maksudur.dev/projects/peaklancer/
+- **Role**: Full Stack Engineer | **Category**: Marketplace | **Type**: Client | **Duration**: 2024 (6 months)
+- **Tech Stack**: Laravel, Livewire, MySQL, Redis, Tailwind CSS
+- **Overview**: A modern freelance services marketplace facilitating digital gig listings, custom proposals, escrow payments, milestone tracking, and direct chat.
+- **Key Challenges**: Building a multi-currency escrow payment engine with secure holdings and release checks; instant chat messaging; commission calculations.
+- **Engineering Solutions**: Designed an automated double-entry payment escrow pipeline; integrated WebSockets and Redis channels for real-time chat; built admin governance modules for dispute resolution.
+- **Impact**: Delivered a seamless digital marketplace supporting client-freelancer contracts and zero-loss payment escrow.
+
+### 3. Payment Gateway Integration Service
+- **URL**: https://maksudur.dev/projects/payment-gateway/
+- **Role**: Lead Developer | **Category**: Fintech | **Type**: Company | **Duration**: 2023 - Present
+- **Tech Stack**: PHP, Laravel, MySQL, Redis, Docker
+- **Overview**: A high-volume transaction routing engine connecting payment checkouts with banking networks, featuring webhook sequencing and reconciliation.
+- **Key Challenges**: Lock contention and duplicate payment callbacks under heavy traffic; non-standard bank API responses; out-of-order webhooks.
+- **Engineering Solutions**: Implemented Redis distributed locks to prevent duplicate callback processing; built adapter normalization layers; enforced transactional state queue logs.
+- **Impact**: Handled thousands of daily checkouts with 0% duplicate payment rates and under 200ms routing latency.
+
+### 4. School ERP Portal
+- **URL**: https://maksudur.dev/projects/school/
+- **Role**: Software Engineer | **Category**: Education | **Type**: Client | **Duration**: 2025 - Present
+- **Tech Stack**: PHP, Laravel, MySQL, Livewire, Alpine.js
+- **Overview**: An all-in-one school management portal covering student registration, class schedules, attendance tracking, and report card generation.
+- **Key Challenges**: High-volume PDF report generation causing timeouts; schedule conflict matrices; slow profile history loads.
+- **Engineering Solutions**: Offloaded PDF generation tasks to Redis background queue workers; built custom conflict-checking schedule algorithms; optimized eager-loading relationships.
+- **Impact**: Reduced end-of-term report processing overhead from days to hours across multiple institutions.
+
+### 5. HRM & Payroll Engine
+- **URL**: https://maksudur.dev/projects/hrm/
+- **Role**: Backend Lead | **Category**: Enterprise | **Type**: Company | **Duration**: 2020 - 2021
+- **Tech Stack**: Laravel, MySQL, jQuery, Bootstrap
+- **Overview**: A payroll-focused HRM engine handling work shift rules, salary calculation, tax deductions, and employee records.
+- **Key Challenges**: Custom overtime and tax calculation rules; encrypting payroll data while maintaining searchability; slow report queries.
+- **Engineering Solutions**: Built dynamic payroll calculation formula engines; implemented column-level AES encryption with blind index search; created materialized query views.
+- **Impact**: Eliminated manual payroll errors and reduced overall payroll processing time by 75%.
+
+### 6. Garments ERP Supply Chain System
+- **URL**: https://maksudur.dev/projects/garments-erp/
+- **Role**: System Architect | **Category**: Manufacturing | **Type**: Company | **Duration**: 2022 - 2023
+- **Tech Stack**: Laravel, MySQL, jQuery, Bootstrap
+- **Overview**: A specialized garment production management platform tracking raw fabric stock, dye line inventory, sewing capacities, and shipments.
+- **Key Challenges**: Multi-stage sub-assembly quantity tracking; unpredictable dye inventory variances; external carrier logistics syncing.
+- **Engineering Solutions**: Built a WebSocket-powered Kanban production dashboard; designed a multi-warehouse double-entry inventory model; developed API connectors for shipping carriers.
+- **Impact**: Lowered material waste by 18% and significantly reduced factory production delays.
+
+### 7. Point of Sale (POS) Offline Register
+- **URL**: https://maksudur.dev/projects/pos/
+- **Role**: Full Stack Engineer | **Category**: Inventory System | **Type**: Company | **Duration**: 2021 - 2022
+- **Tech Stack**: PHP, Laravel, MySQL, jQuery
+- **Overview**: A retail cash register platform that operates offline during internet dropouts and automatically synchronizes local transactions upon reconnection.
+- **Key Challenges**: Syncing offline sales with central inventory without data corruption; low-latency hardware performance; browser hardware printer interfacing.
+- **Engineering Solutions**: Engineered a local-first browser IndexedDB event queue; optimized render loops for low-spec PCs; built custom client printing drivers using native browser APIs.
+- **Impact**: Maintained 99.9% inventory sync accuracy across retail store branches.
+
+### 8. Money Management Financial Ledger
+- **URL**: https://maksudur.dev/projects/money-management/
+- **Role**: Full Stack Engineer | **Category**: Finance | **Type**: Personal | **Duration**: 2026 - Present
+- **Tech Stack**: Next.js, MySQL, Laravel, Tailwind CSS
+- **Overview**: A privacy-first personal financial manager offering real-time budget forecasting, bank feed integrations, and OCR receipt categorization.
+- **Key Challenges**: Secure automated bank account sync; parsing physical receipt images accurately; double-entry ledger balancing.
+- **Engineering Solutions**: Integrated Plaid API with double-entry database models; implemented lightweight OCR/NLP parsing pipelines; enforced atomic ledger transaction constraints.
+- **Impact**: Categorized over $500k in transactions with receipt match accuracy above 92%.
+
+### 9. Sportslover.Live Real-Time Coverage
+- **URL**: https://maksudur.dev/projects/sportslover/
+- **Role**: Full Stack Developer | **Category**: Sports Blog | **Type**: Personal | **Duration**: 2026 - Present
+- **Tech Stack**: Next.js, Laravel, Tailwind CSS, MySQL
+- **Overview**: A live sports coverage and match tracking platform delivering real-time match events, live commentary feeds, and custom blogging tools.
+- **Key Challenges**: DB load spikes during peak viewership; sub-second commentary delivery; mobile data optimization.
+- **Engineering Solutions**: Configured Redis caching for live match statistics; integrated Pusher/Laravel Echo WebSockets; tuned Next.js client components.
+- **Impact**: Scaled to deliver live game updates within 1 second of occurrence to thousands of concurrent sports fans.
+
+---
+
+## 5. Detailed Engineering Services
+
+### 1. Hire Laravel Developer
+- **URL**: https://maksudur.dev/services/hire-laravel-developer/
+- **Overview**: Dedicated remote Laravel development for custom web applications, API backends, queue architecture, and legacy code refactoring.
+- **Core Offerings**: Custom Laravel Application Development, Relational Database Optimization, High-Throughput Queue Management, Payment Gateway Integrations, Legacy Upgrades, and RESTful API Design.
+
+### 2. Hire PHP Developer
+- **URL**: https://maksudur.dev/services/hire-php-developer/
+- **Overview**: Expert PHP 8.x engineering focusing on clean code architecture, Object-Oriented Programming (OOP), PSR compliance, and backend refactoring.
+- **Core Offerings**: Custom PHP Development, Framework Migration, Database Schema Tuning, Security Hardening, Third-Party API Integrations, and Codebase Audits.
+
+### 3. Hire Backend Developer
+- **URL**: https://maksudur.dev/services/hire-backend-developer/
+- **Overview**: High-performance backend development focused on RESTful APIs, microservices, database normalization, Redis caching, and Docker deployments.
+- **Core Offerings**: Scalable API Design, Relational Database Modeling, Background Worker Architecture, Dockerization, Redis Caching Strategies, and System Security.
+
+### 4. Payment Gateway Integration
+- **URL**: https://maksudur.dev/services/payment-gateway-integration/
+- **Overview**: End-to-end integration of payment networks, banking APIs, credit card processors, and digital wallet checkout systems.
+- **Core Offerings**: Multi-currency Checkout Integration, Banking API Adapters, Redis Lock Middleware, Webhook Sequence Handlers, Automated Financial Reconciliation, and Refund Management.
+
+### 5. Telegram Mini App Development
+- **URL**: https://maksudur.dev/services/telegram-mini-app-development/
+- **Overview**: Fast, responsive web applications embedded directly inside Telegram, combining React/Vite frontends with Laravel API backends.
+- **Core Offerings**: Custom Telegram Web App (TWA) Development, Telegram `initData` Cryptographic Validation, Bot API Webhooks, Wallet & Payment Flow Integration, and Touch-Optimized UI.
+
+### 6. Laravel API Development
+- **URL**: https://maksudur.dev/services/laravel-api-development/
+- **Overview**: Secure, developer-friendly REST APIs built with Laravel, featuring Sanctum/Passport OAuth2 authentication, OpenAPI specs, and rate limiting.
+- **Core Offerings**: RESTful API Architecture, Sanctum & Passport Authentication, Response Serialization, OpenAPI / Swagger Documentation, Rate Limiting & Throttling, and Automated API Testing.
+
+### 7. React & Laravel Full-Stack Development
+- **URL**: https://maksudur.dev/services/react-laravel-development/
+- **Overview**: Modern full-stack web applications pairing Next.js / React user interfaces with robust Laravel backend APIs.
+- **Core Offerings**: Single Page Application (SPA) & SSR Development, Decoupled API Integration, Shared TypeScript Contracts, Optimized State Management, Tailwind CSS Design, and CI/CD Deployment.
+
+---
+
+## 6. Terms, Privacy & General Policies
+
+- **URL**: https://maksudur.dev/terms/
+- All client work, freelance contracts, and software engineering engagements are governed by clear written statements of work (SOW) or contracts.
+- Intellectual Property (IP) of custom application code is fully assigned to clients upon final project settlement.
+- Client database credentials, environment keys, and business data are treated with strict confidentiality.
+
+---
+
+## 7. Contact Information
+
+For project inquiries, technical consulting, or contract hiring:
+- **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
+- **Direct Contact Page**: https://maksudur.dev/contact/
+- **WhatsApp**: https://wa.me/maksudur.dev
+- **GitHub**: https://github.com/valiantboymaksud
+- **LinkedIn**: http://linkedin.com/in/maksudur-dev

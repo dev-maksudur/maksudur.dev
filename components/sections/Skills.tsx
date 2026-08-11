@@ -10,7 +10,7 @@ const skillCategories = [
     color: "text-blue-400",
     bg: "bg-blue-500/10",
     border: "border-blue-500/20",
-    tech: ["PHP", "Laravel", "Python", "Django"]
+    tech: ["PHP", "Laravel", "dotnet core", "Python"]
   },
   {
     title: "Frontend",
@@ -18,7 +18,7 @@ const skillCategories = [
     color: "text-purple-400",
     bg: "bg-purple-500/10",
     border: "border-purple-500/20",
-    tech: ["React", "Next.Js", "TypeScript", "Tailwind CSS"]
+    tech: ["React", "Next.Js", "TypeScript", "Tailwind CSS", "Jquery"]
   },
   {
     title: "Database & Caching",
@@ -34,7 +34,7 @@ const skillCategories = [
     color: "text-orange-400",
     bg: "bg-orange-500/10",
     border: "border-orange-500/20",
-    tech: ["Docker", "AWS", "CI/CD Pipelines", "Linux"]
+    tech: ["AWS", "Docker", "Linux", "CI/CD Pipelines", "Github Actions", "Jenkins"]
   },
   {
     title: "Architecture",
@@ -58,11 +58,11 @@ export default function Skills() {
   return (
     <section id="skills" className="py-12 px-3 sm:px-6 lg:px-8 relative max-w-6xl mx-auto">
       <FadeIn>
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-4 transition-colors text-slate-900 dark:text-white">
-            Technical <span className="text-blue-500">Expertise</span>
+        <div className="mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-3 transition-colors text-slate-900 dark:text-white">
+            Technical <span className="text-blue-600 dark:text-blue-400">Expertise</span>
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400">
+          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300">
             A comprehensive stack of technologies I use to build scalable systems.
           </p>
         </div>

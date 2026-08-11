@@ -8,6 +8,7 @@ export interface Project {
   tech: string[];
   image: string;
   category: string;
+  projectType: "Personal" | "Company" | "Client";
   role: string;
   duration: string;
   challenges: string[];

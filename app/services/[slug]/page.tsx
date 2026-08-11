@@ -98,11 +98,11 @@ export default async function ServiceDetailPage({
             </span>
           </div>
           
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight mb-4 leading-tight">
             {service.heading}
           </h1>
           
-          <p className="text-lg md:text-xl text-slate-650 dark:text-slate-400 font-medium leading-relaxed max-w-4xl">
+          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-medium leading-relaxed max-w-4xl">
             {service.subheading}
           </p>
         </div>
@@ -126,7 +126,7 @@ export default async function ServiceDetailPage({
           {/* What I Offer Section */}
           <FadeIn>
             <section className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+              <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-blue-500" /> Key Specializations
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -150,7 +150,7 @@ export default async function ServiceDetailPage({
           {/* Experience Highlights Section */}
           <FadeIn>
             <section className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+              <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-emerald-500" /> Proven Track Record
               </h2>
               <div className="p-6 rounded-2xl border bg-slate-50 border-slate-200 dark:bg-white/5 dark:border-white/5 space-y-6">
@@ -172,7 +172,7 @@ export default async function ServiceDetailPage({
           {/* Development Process Section */}
           <FadeIn>
             <section className="space-y-8">
-              <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+              <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                 <Cpu className="w-5 h-5 text-indigo-500" /> My Development Process
               </h2>
               <div className="relative border-l border-slate-200 dark:border-slate-800 ml-4 pl-6 space-y-8">
@@ -252,7 +252,7 @@ export default async function ServiceDetailPage({
       {/* FAQs Section */}
       <FadeIn>
         <section className="mb-16 border-t border-slate-200 dark:border-slate-800/60 pt-12">
-          <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight mb-8">
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight mb-8">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6 max-w-3xl">

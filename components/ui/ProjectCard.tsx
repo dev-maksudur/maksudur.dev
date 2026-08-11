@@ -21,8 +21,17 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         {/* Image Container / Mockup Frame */}
         <div className="relative h-56 overflow-hidden p-3 bg-slate-50 dark:bg-slate-950/40 border-b border-slate-100 dark:border-slate-800/80">
           <ProjectVisual projectId={project.id} image={project.image} title={project.title} />
-          <div className="absolute top-5 left-5 z-20">
-            <span className="px-3 py-1 bg-blue-600 text-white text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg">
+          <div className="absolute top-4 left-4 z-20 flex flex-wrap gap-2">
+            <span className={`px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider rounded-md shadow-md ${
+              project.projectType === "Personal"
+                ? "bg-emerald-600 text-white"
+                : project.projectType === "Company"
+                ? "bg-blue-600 text-white"
+                : "bg-amber-600 text-white"
+            }`}>
+              {project.projectType === "Personal" ? "Core Project" : `${project.projectType} Work`}
+            </span>
+            <span className="px-2.5 py-1 bg-slate-900/80 backdrop-blur-sm text-slate-200 text-[10px] font-semibold uppercase tracking-wider rounded-md shadow-md">
               {project.category}
             </span>
           </div>

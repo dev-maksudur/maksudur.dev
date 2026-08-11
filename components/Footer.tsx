@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { motion } from "framer-motion";
 
 const socialLinks = [
+  { name: "WhatsApp", icon: WhatsAppIcon, href: "https://wa.me/maksudur.dev" },
   { name: "GitHub", icon: Github, href: "https://github.com/valiantboymaksud" },
   { name: "LinkedIn", icon: Linkedin, href: "http://linkedin.com/in/maksudur-dev" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
@@ -51,7 +53,7 @@ export default function Footer() {
 
           {/* Availability & Contact */}
           <div className="col-span-1">
-            <h4 className="text-sm font-black uppercase tracking-widest mb-6 text-slate-900 dark:text-slate-300">
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-6 text-slate-900 dark:text-slate-300">
               Availability
             </h4>
             <div className="space-y-4">
@@ -65,7 +67,7 @@ export default function Footer() {
               <div className="pt-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 text-sm font-black text-blue-700 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-all group"
+                  className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-all group"
                 >
                   Hire Me <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
@@ -75,7 +77,7 @@ export default function Footer() {
 
           {/* Quick Links / Location */}
           <div className="col-span-1">
-            <h4 className="text-sm font-black uppercase tracking-widest mb-6 text-slate-900 dark:text-slate-300">
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-6 text-slate-900 dark:text-slate-300">
               Location
             </h4>
             <p className="text-sm mb-2 text-slate-800 dark:text-slate-300">Dhaka, Bangladesh</p>
