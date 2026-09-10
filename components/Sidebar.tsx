@@ -13,50 +13,25 @@ import { useTheme } from "./ThemeProvider";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const navItems = [
-  { name: "Home", href: "/", icon: Home, isHash: false },
-  { name: "Profile", href: "/profile", icon: User, isHash: false },
-  { name: "Experience", href: "/experience", icon: Briefcase, isHash: false },
-  { name: "Projects", href: "/projects", icon: FolderOpen, isHash: false },
-  { name: "Contact", href: "/contact", icon: Mail, isHash: false },
+  { name: "Home", href: "/", icon: Home },
+  { name: "Profile", href: "/profile/", icon: User },
+  { name: "Experience", href: "/experience/", icon: Briefcase },
+  { name: "Projects", href: "/projects/", icon: FolderOpen },
+  { name: "Contact", href: "/contact/", icon: Mail },
 ];
+
+const normalizePath = (path: string | null) => {
+  if (!path) return "/";
+  const trimmed = path.replace(/\/+$/, "");
+  return trimmed === "" ? "/" : trimmed;
+};
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
   const { theme, toggleTheme } = useTheme();
   const isDarkMode = theme === 'dark';
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
-
-  // Build correct href: on non-home pages, hash links should go to /#hash
-  const getHref = (item: typeof navItems[0]) => {
-    if (item.isHash && !isHomePage) {
-      return `/${item.href}`;
-    }
-    return item.href;
-  };
-
-  // Highlight active section on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      const sectionItems = navItems.filter((item) => item.href.startsWith("#"));
-      let current = "";
-
-      sectionItems.forEach((item) => {
-        const element = document.querySelector(item.href);
-        if (element instanceof HTMLElement) {
-          const sectionTop = element.offsetTop;
-          if (window.scrollY >= sectionTop - 150) {
-            current = item.href.substring(1);
-          }
-        }
-      });
-      setActiveSection(current);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const currentPath = normalizePath(pathname);
 
   const SidebarContent = () => (
     <nav className="flex flex-col h-full justify-between py-8">
@@ -66,8 +41,11 @@ export default function Sidebar() {
         <Link href="/" className="flex items-center gap-3 mb-10 group">
           <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-500/50 group-hover:ring-blue-500 transition-all shadow-lg">
             <img
-              src="/images/maksudur.png"
-              alt="Maksudur Rahman"
+              src="/images/maksudur.webp"
+              alt="Maksudur Rahman - Senior Laravel Developer & PHP Software Engineer | Founder of Kodersolution"
+              title="Maksudur Rahman - Senior Laravel Developer & Software Engineer"
+              width={48}
+              height={48}
               className="object-cover w-full h-full"
             />
           </div>
@@ -80,25 +58,26 @@ export default function Sidebar() {
         {/* Navigation */}
         <ul className="space-y-1">
           {navItems.map((item) => {
-            const sectionId = item.href.startsWith("#") ? item.href.substring(1) : null;
-            const isActiveHash = sectionId !== null && activeSection === sectionId;
-            const isActivePage = !item.isHash && pathname === item.href;
-            const isActive = isActiveHash || isActivePage;
+            const targetPath = normalizePath(item.href);
+            const isActive =
+              targetPath === "/"
+                ? currentPath === "/"
+                : currentPath === targetPath || currentPath.startsWith(`${targetPath}/`);
             const Icon = item.icon;
-            const resolvedHref = getHref(item);
+
             return (
               <li key={item.name}>
                 <Link
-                  href={resolvedHref}
+                  href={item.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    "flex items-center px-4 py-3 rounded-lg transition-all duration-200 text-sm font-medium gap-3",
+                    "flex items-center px-4 py-3 rounded-lg transition-all duration-200 text-sm gap-3",
                     isActive
-                      ? "bg-blue-600 text-white shadow-md"
-                      : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5"
+                      ? "bg-blue-600 text-white font-semibold shadow-md shadow-blue-500/25"
+                      : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5 font-medium"
                   )}
                 >
-                  <Icon size={18} />
+                  <Icon size={18} className={isActive ? "text-white" : "text-slate-500 dark:text-slate-400"} />
                   {item.name}
                 </Link>
               </li>
@@ -186,8 +165,11 @@ export default function Sidebar() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-8 h-8 rounded-full overflow-hidden ring-1 ring-blue-500/30 group-hover:ring-blue-500 transition-all">
             <img
-              src="/images/maksudur.png"
-              alt="Maksudur Rahman"
+              src="/images/maksudur.webp"
+              alt="Maksudur Rahman - Senior Laravel Developer & PHP Software Engineer"
+              title="Maksudur Rahman - Software Engineer"
+              width={32}
+              height={32}
               className="object-cover w-full h-full"
             />
           </div>

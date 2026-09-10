@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     "Laravel freelancer Bangladesh",
     "React Laravel freelancer",
     "Remote Laravel engineer",
+    "Linux Server Setup",
+    "AWS EC2 Deployment",
+    "aaPanel Setup",
+    "SSL Certificate Setup",
+    "Kodersolution Founder",
+    "Full Stack Software Engineer",
     "Maksudur Rahman",
   ],
   authors: [{ name: "Maksudur Rahman" }],
@@ -90,6 +96,7 @@ export default function RootLayout({
       <head>
         <meta name="title" content="Laravel Developer & PHP Software Engineer | Maksudur.dev" />
         <link rel="alternate" type="text/markdown" title="LLMs.txt" href="/llms.txt" />
+        <link rel="preload" as="image" href="/images/maksudur.webp" type="image/webp" />
         <JsonLd data={getRootSchema()} />
         <script
           dangerouslySetInnerHTML={{

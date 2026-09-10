@@ -1,6 +1,6 @@
 "use client";
 
-import { useInView } from "framer-motion";
+import { useInView, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { getYearsOfExperience } from "@/lib/utils/experience";
 
@@ -36,38 +36,42 @@ interface CounterProps {
 }
 
 function CounterCard({ label, value, suffix = "+", highlight, isFloat = false }: CounterProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const [displayCount, setDisplayCount] = useState(value);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "0px" });
+  const [displayCount, setDisplayCount] = useState<number>(value);
+  const hasAnimatedRef = useRef(false);
 
   useEffect(() => {
-    if (isInView && !hasAnimated) {
-      setHasAnimated(true);
-      const duration = 1500;
-      const steps = 30;
-      const stepTime = duration / steps;
-      let step = 0;
-      setDisplayCount(0);
+    let controls: { stop: () => void } | undefined;
 
-      const timer = setInterval(() => {
-        step++;
-        const progress = step / steps;
-        // Ease out quadratic
-        const easeVal = 1 - (1 - progress) * (1 - progress);
-        const current = easeVal * value;
-        
-        if (step >= steps) {
-          setDisplayCount(value);
-          clearInterval(timer);
-        } else {
-          setDisplayCount(isFloat ? Math.round(current * 10) / 10 : Math.round(current));
-        }
-      }, stepTime);
+    const startCounting = () => {
+      if (hasAnimatedRef.current) return;
+      hasAnimatedRef.current = true;
 
-      return () => clearInterval(timer);
+      controls = animate(0, value, {
+        duration: 1.8,
+        ease: [0.16, 1, 0.3, 1],
+        onUpdate: (latest) => {
+          setDisplayCount(isFloat ? Math.round(latest * 10) / 10 : Math.round(latest));
+        },
+      });
+    };
+
+    if (isInView) {
+      startCounting();
+    } else {
+      // Fallback timer ensures stats always count up even if intersection observer is delayed
+      const timer = setTimeout(() => {
+        startCounting();
+      }, 600);
+      return () => {
+        clearTimeout(timer);
+        controls?.stop();
+      };
     }
-  }, [isInView, value, isFloat, hasAnimated]);
+
+    return () => controls?.stop();
+  }, [isInView, value, isFloat]);
 
   return (
     <div 
