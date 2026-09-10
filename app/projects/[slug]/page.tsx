@@ -2,6 +2,9 @@ import { notFound } from 'next/navigation';
 import ProjectDetailContent from '@/components/ProjectDetailContent';
 import { projects } from '@/lib/data/projects';
 
+import JsonLd from '@/components/JsonLd';
+import { getProjectDetailSchema } from '@/lib/seo/schema';
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -17,10 +20,17 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const project = projects.find(p => p.id === slug);
+  const title = project?.title ?? 'Project Not Found';
 
   return {
-    title: project?.title ?? 'Project Not Found',
+    title,
     description: project?.overview,
+    alternates: {
+      canonical: `/projects/${slug}/`,
+    },
+    other: {
+      title: `${title} | Maksudur.dev`,
+    },
   };
 }
 
@@ -36,5 +46,10 @@ export default async function ProjectDetail({
     notFound();
   }
 
-  return <ProjectDetailContent project={project} />;
+  return (
+    <>
+      <JsonLd data={getProjectDetailSchema(project)} />
+      <ProjectDetailContent project={project} />
+    </>
+  );
 }

@@ -4,7 +4,7 @@ import { servicesData, servicesList } from "@/lib/data/services";
 import { FadeIn } from "@/components/ui/framer-wrapper";
 import { 
   Server, Code, Database, CreditCard, MessageSquare, Link as LinkIcon, 
-  Layers, ArrowLeft, ArrowRight, CheckCircle, ChevronDown, Cpu, Sparkles 
+  Layers, ArrowLeft, ArrowRight, CheckCircle, ChevronDown, Cpu, Sparkles, Terminal 
 } from "lucide-react";
 
 export const dynamicParams = false;
@@ -14,6 +14,9 @@ export function generateStaticParams() {
     slug: service.slug,
   }));
 }
+
+import JsonLd from "@/components/JsonLd";
+import { getServiceDetailSchema } from "@/lib/seo/schema";
 
 export async function generateMetadata({
   params,
@@ -34,7 +37,10 @@ export async function generateMetadata({
     title: service.title,
     description: service.metaDescription,
     alternates: {
-      canonical: `/services/${service.slug}`,
+      canonical: `/services/${service.slug}/`,
+    },
+    other: {
+      title: `${service.title} | Maksudur.dev`,
     },
   };
 }
@@ -56,6 +62,8 @@ const getServiceIcon = (slug: string) => {
       return <LinkIcon className="w-6 h-6 text-cyan-500" />;
     case "react-laravel-development":
       return <Layers className="w-6 h-6 text-pink-500" />;
+    case "devops-and-server-setup":
+      return <Terminal className="w-6 h-6 text-orange-500" />;
     default:
       return <Server className="w-6 h-6 text-blue-500" />;
   }
@@ -74,7 +82,8 @@ export default async function ServiceDetailPage({
   }
 
   return (
-    <div className="py-12 max-w-7xl mx-auto pt-20 md:pt-10">
+    <div className="max-w-7xl mx-auto pb-12">
+      <JsonLd data={getServiceDetailSchema(service)} />
       
       {/* Back to Services navigation */}
       <FadeIn>

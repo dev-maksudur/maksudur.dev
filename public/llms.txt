@@ -1,6 +1,6 @@
 # Maksudur Rahman - Laravel Developer & PHP Software Engineer
 
-> Senior Remote Software Engineer specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech systems, and React / Next.js frontends. Available for global contract, freelance, and remote development roles.
+> Senior Remote Software Engineer and Founder/Lead Architect of **Kodersolution.com**. Specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech systems, and React / Next.js frontends. Available for global contract, freelance, and remote development roles.
 
 This document serves as a machine-readable index for AI agents, LLM search engines, and automated crawlers navigating https://maksudur.dev.
 
@@ -11,7 +11,7 @@ This document serves as a machine-readable index for AI agents, LLM search engin
 - **Website**: https://maksudur.dev
 - **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
 - **WhatsApp**: https://wa.me/maksudur.dev
-- **GitHub**: https://github.com/valiantboymaksud
+- **GitHub**: https://github.com/dev-maksudur
 - **LinkedIn**: http://linkedin.com/in/maksudur-dev
 - **Location**: West Dhanmondi, Dhaka, Bangladesh (Open for Global Remote Work)
 - **Status**: Available for new freelance projects, full-time contracts, and consulting.
@@ -34,10 +34,20 @@ This document serves as a machine-readable index for AI agents, LLM search engin
 - [Home & Portfolio Overview](https://maksudur.dev/): Summary of engineering background, featured projects, and services.
 - [Profile & Biography](https://maksudur.dev/profile/): Detailed background, software philosophy, technical skills, and career achievements.
 - [Work Experience](https://maksudur.dev/experience/): Chronological work history at Softrobotics Bangladesh Ltd and Smart Software Ltd.
-- [Portfolio Projects](https://maksudur.dev/projects/): Interactive directory of 9 enterprise and open-source software projects.
+- [Portfolio Projects](https://maksudur.dev/projects/): Interactive directory of enterprise and open-source software projects.
 - [Engineering Services](https://maksudur.dev/services/): Specialized Laravel, PHP, Backend API, and Fintech engineering offerings.
 - [Contact & Booking](https://maksudur.dev/contact/): Direct contact details, inquiry form, and availability status.
 - [Terms & Conditions](https://maksudur.dev/terms/): Privacy, usage policies, and software agreement standards.
+
+---
+
+## Flagship Platform & Core Engineering Project
+
+- [Kodersolution.com - Developer Platform](https://kodersolution.com/) ([Case Study](https://maksudur.dev/projects/kodersolution/)): 
+  - **Role**: Founder & Lead Engineer (2023 - Present)
+  - **Live URL**: https://kodersolution.com
+  - **Architecture**: Next.js (App Router, SSR, ISR) frontend coupled with a high-throughput Laravel REST API backend (`api.kodersolution.com`), Redis distributed cache, and MySQL database.
+  - **Overview**: Full-stack developer platform and learning ecosystem featuring technical articles, programming tutorials, student learning tracks, community discussion forums, and automated split-payment billing.
 
 ---
 
@@ -50,12 +60,12 @@ This document serves as a machine-readable index for AI agents, LLM search engin
 - [Telegram Mini App Development](https://maksudur.dev/services/telegram-mini-app-development/): Embedded React/Vite interfaces within Telegram, initData security verification, and bot automation.
 - [Laravel API Development](https://maksudur.dev/services/laravel-api-development/): Token-based Sanctum/Passport OAuth2 APIs, OpenAPI documentation, and rate-limiting middlewares.
 - [React & Laravel Development](https://maksudur.dev/services/react-laravel-development/): Full-stack web applications pairing Next.js / React frontends with Laravel REST API backends.
+- [Linux Server Setup & DevOps](https://maksudur.dev/services/devops-and-server-setup/): AWS EC2 setup, aaPanel installation, Let's Encrypt SSL, Nginx web server configuration, and Linux server management.
 
 ---
 
-## Featured Engineering Projects
+## Other Featured Engineering Projects
 
-- [Kodersolution Developer Platform](https://maksudur.dev/projects/kodersolution/): Interactive learning ecosystem for developers with technical articles, tutorials, and community forums.
 - [Peaklancer Freelance Marketplace](https://maksudur.dev/projects/peaklancer/): Digital marketplace with escrow payment workflows, milestone dispatches, and real-time chat.
 - [Fintech Payment Gateway Service](https://maksudur.dev/projects/payment-gateway/): High-throughput transaction routing service with banking networks, Redis distributed locks, and error normalization.
 - [School ERP Administration Portal](https://maksudur.dev/projects/school/): School management system handling student lifecycles, schedule matrix validation, and queued PDF generation.

@@ -1,4 +1,5 @@
 import { ServicePageData } from "./types";
+import { getYearsOfExperience } from "@/lib/utils/experience";
 
 export const hireLaravelDeveloper: ServicePageData = {
   id: "hire-laravel-developer",
@@ -10,7 +11,7 @@ export const hireLaravelDeveloper: ServicePageData = {
   keywords: ["hire laravel developer", "laravel developer for hire", "laravel freelancer", "remote laravel developer", "hire php developer"],
   intro: [
     "In today's fast-paced digital economy, businesses need robust, secure, and highly scalable web applications that perform under pressure. Laravel has emerged as the premier PHP framework for building modern enterprise systems, offering elegant syntax, powerful features, and unparalleled developer velocity. However, to leverage Laravel's full potential, you need more than just a programmer—you need a dedicated software engineer who understands database architecture, queue management, security protocols, and scalable system design.",
-    "I am an experienced remote Laravel Developer and PHP Software Engineer with over 5 years of professional experience building enterprise portals, financial technology integrations, and high-throughput backend pipelines. Having worked as a core engineer in rapid-growth tech environments, I specialize in designing and maintaining clean, testable codebases that are optimized for performance, security, and developer onboarding. My code adheres strictly to PSR standards, SOLID principles, and clean architecture paradigms, ensuring your system remains maintainable as your business scales.",
+    `I am an experienced remote Laravel Developer and PHP Software Engineer with over ${getYearsOfExperience()} years of professional experience building enterprise portals, financial technology integrations, and high-throughput backend pipelines. Having worked as a core engineer in rapid-growth tech environments, I specialize in designing and maintaining clean, testable codebases that are optimized for performance, security, and developer onboarding. My code adheres strictly to PSR standards, SOLID principles, and clean architecture paradigms, ensuring your system remains maintainable as your business scales.`,
     "Whether you are a startup looking to build a secure MVP, an agency needing a reliable contractor to expand your capacity, or an established enterprise seeking to migrate legacy systems to Laravel, I offer full-cycle development services. From database indexing and Redis queue tuning to third-party bank payment gateway integrations, I focus on building systems that don't break, allowing you to focus on growing your business."
   ],
   offers: [

@@ -3,14 +3,20 @@ import Link from "next/link";
 import { servicesList } from "@/lib/data/services";
 import { FadeIn } from "@/components/ui/framer-wrapper";
 import { 
-  Server, Code, Database, CreditCard, MessageSquare, Link as LinkIcon, Layers, ChevronRight, ArrowRight 
+  Server, Code, Database, CreditCard, MessageSquare, Link as LinkIcon, Layers, ChevronRight, ArrowRight, Terminal 
 } from "lucide-react";
+
+import JsonLd from "@/components/JsonLd";
+import { getServicesCollectionSchema } from "@/lib/seo/schema";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Explore professional software engineering services, including custom Laravel web applications, payment integrations, REST APIs, Telegram Mini Apps, and React full-stack solutions.",
+  description: "Explore professional software engineering services, including custom Laravel web applications, payment integrations, REST APIs, Telegram Mini Apps, React full-stack solutions, and DevOps server setup.",
   alternates: {
-    canonical: "/services",
+    canonical: "/services/",
+  },
+  other: {
+    title: "Services | Maksudur.dev",
   },
 };
 
@@ -31,6 +37,8 @@ const getServiceIcon = (slug: string) => {
       return <LinkIcon className="w-8 h-8 text-cyan-500" />;
     case "react-laravel-development":
       return <Layers className="w-8 h-8 text-pink-500" />;
+    case "devops-and-server-setup":
+      return <Terminal className="w-8 h-8 text-orange-500" />;
     default:
       return <Server className="w-8 h-8 text-blue-500" />;
   }
@@ -38,7 +46,8 @@ const getServiceIcon = (slug: string) => {
 
 export default function ServicesPage() {
   return (
-    <div className="py-12 max-w-7xl mx-auto pt-20 md:pt-10">
+    <div className="max-w-7xl mx-auto pb-12">
+      <JsonLd data={getServicesCollectionSchema(servicesList)} />
       {/* Page Header */}
       <FadeIn>
         <div className="mb-12">

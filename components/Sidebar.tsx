@@ -72,7 +72,7 @@ export default function Sidebar() {
             />
           </div>
           <div>
-            <h1 className="text-lg font-bold dark:text-white text-slate-900 tracking-tight">Maksudur Rahman</h1>
+            <span className="text-lg font-bold dark:text-white text-slate-900 tracking-tight block">Maksudur Rahman</span>
             <p className="text-xs text-blue-500 dark:text-blue-400 font-medium uppercase tracking-wider">Software Engineer</p>
           </div>
         </Link>
@@ -110,7 +110,7 @@ export default function Sidebar() {
             <a
               href="/files/Maksudur_Rahman.pdf"
               download
-              className="flex items-center justify-center px-4 py-3 mt-2 rounded-lg font-bold text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 bg-[length:200%_200%] animate-gradientHover hover:scale-105 transition-all text-sm shadow-md"
+              className="flex items-center justify-center px-4 py-3 mt-2 rounded-lg font-bold text-white bg-gradient-to-r from-[#6a2cff] via-[#8b5cf6] to-[#ff8a00] bg-[length:200%_200%] animate-gradientHover hover:scale-105 transition-all text-sm shadow-md"
             >
               Download CV
             </a>
@@ -118,9 +118,9 @@ export default function Sidebar() {
         </ul>
       </div>
 
-      {/* Bottom Section: Socials, Theme Toggle, Copyright */}
+      {/* Bottom Section: Socials, Theme Toggle */}
       <div className="px-6">
-        <div className="flex gap-2 mb-4 items-center justify-between">
+        <div className="flex gap-2 items-center justify-between">
           <div className="flex gap-2">
             <a
               href="https://wa.me/maksudur.dev"
@@ -132,7 +132,7 @@ export default function Sidebar() {
               <WhatsAppIcon size={18} />
             </a>
             <a
-              href="https://github.com/valiantboymaksud"
+              href="https://github.com/dev-maksudur"
               aria-label="GitHub Profile"
               target="_blank"
               rel="noopener noreferrer"
@@ -167,7 +167,6 @@ export default function Sidebar() {
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
         </div>
-        <p className="text-[10px] text-slate-500 dark:text-slate-600">© {new Date().getFullYear()}</p>
       </div>
     </nav>
   );
@@ -194,8 +193,8 @@ export default function Sidebar() {
           </div>
           <span className="font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">Maksudur Rahman</span>
         </Link>
-        <button 
-          onClick={() => setIsOpen(!isOpen)} 
+        <button
+          onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close Menu" : "Open Menu"}
           className="text-slate-900 dark:text-white p-2 bg-slate-100 dark:bg-white/5 rounded-lg hover:bg-slate-200 dark:hover:bg-white/10 transition-colors"
         >

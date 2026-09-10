@@ -1,6 +1,6 @@
 # Maksudur Rahman - Full Engineering Portfolio & Documentation
 
-> Senior Software Engineer specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech solutions, and Next.js / React full-stack architectures.
+> Senior Software Engineer and Founder/Lead Architect of **Kodersolution.com**. Specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech solutions, and Next.js / React full-stack architectures.
 
 ---
 
@@ -11,13 +11,13 @@
 - **Website**: https://maksudur.dev
 - **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
 - **WhatsApp**: https://wa.me/maksudur.dev
-- **GitHub**: https://github.com/valiantboymaksud
+- **GitHub**: https://github.com/dev-maksudur
 - **LinkedIn**: http://linkedin.com/in/maksudur-dev
 - **Location**: West Dhanmondi, Dhaka, Bangladesh
 - **Status**: Available for global remote development contracts, full-time engineering roles, and consulting.
 
 ### About Maksudur Rahman
-I am a seasoned PHP Software Engineer and Full-Stack Developer with over 5 years of professional experience crafting high-throughput, secure, and scalable web applications. My core expertise centers around modern Laravel (10/11), PHP 8.x, database optimization (MySQL/PostgreSQL/Redis), payment gateway integrations, RESTful API design, and Next.js / React user interfaces.
+I am a seasoned PHP Software Engineer, Full-Stack Developer, and the founder/lead engineer behind **Kodersolution.com** with over 5 years of professional experience crafting high-throughput, secure, and scalable web applications. My core expertise centers around modern Laravel (10/11), PHP 8.x, database optimization (MySQL/PostgreSQL/Redis), payment gateway integrations, RESTful API design, and Next.js / React user interfaces.
 
 Throughout my career in rapid-growth tech companies and enterprise projects, I have architected payment routing engines handling thousands of daily checkouts, built HRM & Payroll systems handling complex shift and tax logic, engineered offline-first Point of Sale platforms, and created full-stack platforms serving active developer communities.
 
@@ -76,14 +76,15 @@ I adhere strictly to PSR standards, SOLID principles, Clean Architecture paradig
 
 ## 4. Portfolio Projects (Detailed Case Studies)
 
-### 1. Kodersolution Developer Platform
-- **URL**: https://maksudur.dev/projects/kodersolution/
-- **Role**: Lead Engineer | **Category**: Developer Platform | **Type**: Personal | **Duration**: 2023 - Present
-- **Tech Stack**: Next.js, Laravel, TypeScript, Tailwind CSS, MySQL, Redis, Docker
-- **Overview**: An interactive developer learning platform engineered to share high-quality technical articles, programming tutorials, student learning tracks, and real-time community forums covering Laravel, React, and system architecture.
-- **Key Challenges**: Handling concurrent student forum discussions; optimizing full-text searches across thousands of articles; maximizing SEO indexing.
-- **Engineering Solutions**: Implemented a hybrid Next.js SSR/ISR rendering pipeline backed by Laravel REST APIs; built Redis caching layers for instant search responses; configured structured JSON-LD schemas.
-- **Impact**: Serving thousands of monthly developer readers with fast thread loading and instant article searches.
+### 1. Kodersolution.com - Developer Platform (Flagship Venture)
+- **Case Study URL**: https://maksudur.dev/projects/kodersolution/
+- **Live Platform URL**: https://kodersolution.com
+- **Role**: Founder & Lead Engineer | **Category**: Developer Platform | **Type**: Personal Venture | **Duration**: 2023 - Present
+- **Tech Stack**: Next.js (App Router, SSR, ISR), Laravel 10/11 REST API, TypeScript, Tailwind CSS, MySQL, Redis, Docker
+- **Overview**: An interactive developer learning platform and educational ecosystem engineered to share high-quality technical articles, programming tutorials, student learning tracks, and real-time community forums covering Laravel, React, and system architecture.
+- **Key Challenges**: Handling concurrent student forum discussions; optimizing full-text searches across thousands of articles; maximizing SEO indexing; automated split-payment billing for course authors.
+- **Engineering Solutions**: Implemented a hybrid Next.js SSR/ISR rendering pipeline backed by Laravel REST APIs (`api.kodersolution.com`); built Redis caching layers for instant search responses; configured structured JSON-LD schemas and dynamic metadata pipelines; designed signed URL generation for secure digital asset downloads.
+- **Impact**: Serving thousands of monthly developer readers with sub-second page loads, real-time forum discussions, and fast article searches.
 
 ### 2. Peaklancer Freelance Marketplace
 - **URL**: https://maksudur.dev/projects/peaklancer/
@@ -196,6 +197,11 @@ I adhere strictly to PSR standards, SOLID principles, Clean Architecture paradig
 - **Overview**: Modern full-stack web applications pairing Next.js / React user interfaces with robust Laravel backend APIs.
 - **Core Offerings**: Single Page Application (SPA) & SSR Development, Decoupled API Integration, Shared TypeScript Contracts, Optimized State Management, Tailwind CSS Design, and CI/CD Deployment.
 
+### 8. Linux Server Setup & DevOps
+- **URL**: https://maksudur.dev/services/devops-and-server-setup/
+- **Overview**: Hands-on server setup, cloud hosting configuration, web panel deployment, and SSL certificate installation for startups and small businesses.
+- **Core Offerings**: aaPanel & Web Control Panel Setup, AWS EC2 Cloud Instance Provisioning, Free SSL / Let's Encrypt Installation, Nginx / Apache Web Server Configuration, Domain DNS Routing, and MySQL Database Server Setup.
+
 ---
 
 ## 6. Terms, Privacy & General Policies
@@ -213,5 +219,5 @@ For project inquiries, technical consulting, or contract hiring:
 - **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
 - **Direct Contact Page**: https://maksudur.dev/contact/
 - **WhatsApp**: https://wa.me/maksudur.dev
-- **GitHub**: https://github.com/valiantboymaksud
+- **GitHub**: https://github.com/dev-maksudur
 - **LinkedIn**: http://linkedin.com/in/maksudur-dev

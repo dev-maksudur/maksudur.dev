@@ -14,6 +14,7 @@ export interface Project {
   challenges: string[];
   solutions: string[];
   impact: string;
+  liveUrl?: string;
 }
 
 export const projects: Project[] = projectsData as Project[];

@@ -110,7 +110,7 @@
 //       <div className="px-6">
 //         <div className="flex gap-3 mb-4 items-center justify-between">
 //           <div className="flex gap-3">
-//             <a href="https://github.com/valiantboymaksud" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+//             <a href="https://github.com/dev-maksudur" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
 //               <Github size={18} />
 //             </a>
 //             <a href="http://linkedin.com/in/maksudur-dev" className="p-2 rounded-lg dark:bg-white/5 bg-slate-100 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">

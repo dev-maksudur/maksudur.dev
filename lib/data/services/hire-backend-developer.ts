@@ -1,4 +1,5 @@
 import { ServicePageData } from "./types";
+import { getExperienceText } from "@/lib/utils/experience";
 
 export const hireBackendDeveloper: ServicePageData = {
   id: "hire-backend-developer",
@@ -10,7 +11,7 @@ export const hireBackendDeveloper: ServicePageData = {
   keywords: ["hire backend developer", "remote laravel engineer", "fintech software engineer", "backend software engineer"],
   intro: [
     "A software application is only as strong as its backend. While user interfaces capture user attention, the backend is responsible for data integrity, transaction security, processing speeds, and structural scalability. If your backend suffers from database lockups, slow response times, API integration bugs, or security loopholes, it directly impacts your customer retention and bottom line. Architecting resilient backend systems requires specialized knowledge of server-side languages, database engineering, system memory limits, and caching logic.",
-    "I am Maksudur Rahman, a remote Backend Developer and Software Engineer. Over the last 5+ years, I have built core engine services for financial platforms, human resource modules, procurement tracking, and multi-tenant web applications. I focus on building backend architectures that are clean, modular, and optimized for speed. I work across PHP, Javascript/Node.js, and Python, leveraging the strengths of each platform to create robust systems that handle concurrent database writes, enforce transactional isolation, and sync complex datasets.",
+    `I am Maksudur Rahman, a remote Backend Developer and Software Engineer. Over the last ${getExperienceText()}, I have built core engine services for financial platforms, human resource modules, procurement tracking, and multi-tenant web applications. I focus on building backend architectures that are clean, modular, and optimized for speed. I work across PHP, Javascript/Node.js, and Python, leveraging the strengths of each platform to create robust systems that handle concurrent database writes, enforce transactional isolation, and sync complex datasets.`,
     "My backend development services cover the entire lifecycle of system architecture. Whether you need a relational database model designed to avoid duplication, a custom API gateway built for a mobile app client, or background worker queues to process transaction-heavy dispatches, I engineer secure, optimized, and test-driven backends that align with your business goals."
   ],
   offers: [

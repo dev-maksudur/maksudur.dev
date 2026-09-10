@@ -6,6 +6,7 @@ import { paymentGatewayIntegration } from "./payment-gateway-integration";
 import { telegramMiniAppDevelopment } from "./telegram-mini-app-development";
 import { laravelApiDevelopment } from "./laravel-api-development";
 import { reactLaravelDevelopment } from "./react-laravel-development";
+import { devopsAndServerSetup } from "./devops-and-server-setup";
 
 export const servicesData: Record<string, ServicePageData> = {
   "hire-laravel-developer": hireLaravelDeveloper,
@@ -15,6 +16,7 @@ export const servicesData: Record<string, ServicePageData> = {
   "telegram-mini-app-development": telegramMiniAppDevelopment,
   "laravel-api-development": laravelApiDevelopment,
   "react-laravel-development": reactLaravelDevelopment,
+  "devops-and-server-setup": devopsAndServerSetup,
 };
 
 export const servicesList: ServicePageData[] = Object.values(servicesData);

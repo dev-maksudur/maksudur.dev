@@ -4,18 +4,29 @@ import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import ContactForm from "@/components/sections/ContactForm";
 import { Suspense } from "react";
 
-export const metadata = {
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { getContactPageSchema } from "@/lib/seo/schema";
+
+export const metadata: Metadata = {
   title: "Contact Me",
   description: "Get in touch for freelance, contract, or full-time remote engineering opportunities.",
+  alternates: {
+    canonical: "/contact/",
+  },
+  other: {
+    title: "Contact Me | Maksudur.dev",
+  },
 };
 
 export default function ContactPage() {
   return (
-    <div className="py-12 max-w-7xl mx-auto pt-16 md:pt-0">
+    <div className="max-w-7xl mx-auto pb-12">
+      <JsonLd data={getContactPageSchema()} />
 
       {/* Header */}
       <FadeIn>
-        <h1 className="text-4xl pt-10 md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
           Let's Work <span className="text-blue-500">Together</span>
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl">
@@ -45,10 +56,10 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a 
-                  href="https://wa.me/maksudur.dev" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://wa.me/maksudur.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 text-slate-700 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 transition-colors group"
                 >
                   <div className="p-3 bg-slate-100 dark:bg-white/5 rounded-lg group-hover:bg-emerald-500/10 transition-colors">
@@ -97,7 +108,7 @@ export default function ContactPage() {
                 </a>
 
                 <a
-                  href="https://github.com/valiantboymaksud"
+                  href="https://github.com/dev-maksudur"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-slate-100 hover:bg-slate-200 border border-slate-200 hover:border-slate-300 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/5 dark:hover:border-slate-500/30 rounded-xl transition-all hover:-translate-y-1 group"

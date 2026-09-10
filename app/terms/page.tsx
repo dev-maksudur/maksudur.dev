@@ -1,34 +1,47 @@
-'use client';
+import type { Metadata } from "next";
+import { Shield, FileText, AlertCircle, CheckCircle } from "lucide-react";
+import JsonLd from "@/components/JsonLd";
+import { getTermsPageSchema } from "@/lib/seo/schema";
 
-import { Shield, FileText, AlertCircle, CheckCircle } from 'lucide-react';
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "Terms of Service and legal policies for Maksudur Rahman's software engineering portfolio website.",
+  alternates: {
+    canonical: "/terms/",
+  },
+  other: {
+    title: "Terms of Service | Maksudur.dev",
+  },
+};
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4">
-      <div className="container mx-auto max-w-4xl">
-        {/* Header */}
+    <div className="max-w-4xl mx-auto pb-12">
+      <JsonLd data={getTermsPageSchema()} />
+      {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-full mb-4">
-            <FileText className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4">
+            <FileText className="w-8 h-8 text-blue-600 dark:text-blue-400" />
           </div>
-          <h1 className="text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
             Terms of Service
           </h1>
           <p className="text-gray-600 dark:text-gray-300">
-            Last updated: October 2, 2025
+            Last updated: 2026
           </p>
         </div>
 
         {/* Important Notice */}
-        <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-6 mb-8">
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-8">
           <div className="flex items-start space-x-3">
-            <AlertCircle className="w-6 h-6 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-1" />
+            <AlertCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
             <div>
-              <h3 className="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">
+              <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">
                 Important Notice
               </h3>
-              <p className="text-yellow-800 dark:text-yellow-200 text-sm">
-                By accessing and using CryptoBlog, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our services.
+              <p className="text-blue-800 dark:text-blue-200 text-sm">
+                By accessing and using Maksudur.dev, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our services.
               </p>
             </div>
           </div>
@@ -39,14 +52,14 @@ export default function TermsPage() {
           {/* Section 1 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 1
               </span>
               Acceptance of Terms
             </h2>
             <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                Welcome to CryptoBlog. By accessing or using our website, blog, and AI chat services (collectively, the "Services"), you agree to comply with and be bound by these Terms of Service.
+                Welcome to Maksudur.dev. By accessing or using this website, portfolio showcase, and engineering contact channels (collectively, the "Services"), you agree to comply with and be bound by these Terms of Service.
               </p>
               <p>
                 We reserve the right to update these terms at any time. Your continued use of the Services after any changes constitutes acceptance of the new terms.
@@ -57,7 +70,7 @@ export default function TermsPage() {
           {/* Section 2 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 2
               </span>
               Use of Services
@@ -65,10 +78,10 @@ export default function TermsPage() {
             <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
               <p>You agree to use our Services only for lawful purposes. You must not use our Services:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>In any way that violates any applicable federal, state, local, or international law</li>
-                <li>To transmit or procure the sending of any advertising or promotional material without our prior written consent</li>
-                <li>To impersonate or attempt to impersonate CryptoBlog, our employees, or other users</li>
-                <li>To engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Services</li>
+                <li>In any way that violates any applicable local, national, or international law</li>
+                <li>To transmit unauthorized advertising, spam, or promotional material</li>
+                <li>To impersonate or attempt to impersonate Maksudur Rahman or any related associates</li>
+                <li>To attempt to probe, scan, or compromise the security of this website or related infrastructure</li>
               </ul>
             </div>
           </section>
@@ -76,17 +89,17 @@ export default function TermsPage() {
           {/* Section 3 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 3
               </span>
               Intellectual Property Rights
             </h2>
             <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                The Services and their entire contents, features, and functionality are owned by CryptoBlog and are protected by copyright, trademark, and other intellectual property laws.
+                All original software architectures, code samples, portfolio project descriptions, designs, and content published on Maksudur.dev are the intellectual property of Maksudur Rahman, unless otherwise stated or attributed to respective open-source licenses or clients.
               </p>
               <p>
-                You may not reproduce, distribute, modify, create derivative works of, publicly display, or exploit for any commercial purpose any portion of the Services without our express written permission.
+                You may not redistribute, duplicate, or scrape portfolio content for commercial exploitation without prior written consent.
               </p>
             </div>
           </section>
@@ -94,19 +107,14 @@ export default function TermsPage() {
           {/* Section 4 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 4
               </span>
-              Investment Disclaimer
+              Engineering Consulting & Contract Work
             </h2>
-            <div className="pl-11 space-y-4">
-              <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
-                <p className="text-red-800 dark:text-red-200 font-medium">
-                  The content provided on CryptoBlog is for informational purposes only and should not be considered financial advice. Cryptocurrency investments are highly volatile and risky. Always do your own research and consult with a qualified financial advisor before making investment decisions.
-                </p>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300">
-                We do not guarantee the accuracy, completeness, or reliability of any information provided. Past performance is not indicative of future results.
+            <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
+              <p>
+                Any professional software development, consulting, payment gateway integration, or engineering engagement entered into will be governed by a separate mutual service contract or statement of work (SOW).
               </p>
             </div>
           </section>
@@ -114,37 +122,33 @@ export default function TermsPage() {
           {/* Section 5 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 5
               </span>
-              AI Chat Service
+              Privacy and Communication
             </h2>
             <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                Our AI chat service is provided to assist with cryptocurrency-related questions. The AI provides general information and should not be relied upon as professional financial, legal, or investment advice.
+                Information submitted through the contact form or direct communication channels will be treated with strict confidentiality and will never be sold or shared with third-party advertisers.
               </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>AI responses are generated automatically and may contain errors</li>
-                <li>Do not share personal financial information with the AI</li>
-                <li>AI conversations may be logged for quality improvement purposes</li>
-              </ul>
+              <div className="flex items-center space-x-2 text-blue-600 dark:text-blue-400">
+                <Shield className="w-5 h-5" />
+                <span className="font-medium">Your privacy and project details are respected</span>
+              </div>
             </div>
           </section>
 
           {/* Section 6 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 6
               </span>
-              User Content
+              Limitation of Liability
             </h2>
             <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                If you submit comments, feedback, or other content to our Services, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, and publish such content.
-              </p>
-              <p>
-                You represent that you own or have the necessary rights to the content you submit and that it does not violate any third-party rights.
+                This portfolio website is provided on an "as is" and "as available" basis without warranties of any kind. Maksudur Rahman shall not be liable for any direct or indirect damages resulting from the use of this website.
               </p>
             </div>
           </section>
@@ -152,71 +156,20 @@ export default function TermsPage() {
           {/* Section 7 */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+              <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                 7
-              </span>
-              Privacy and Data Protection
-            </h2>
-            <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
-              <p>
-                Your use of our Services is also governed by our Privacy Policy. We collect and use personal information as described in our Privacy Policy.
-              </p>
-              <div className="flex items-center space-x-2 text-primary-600 dark:text-primary-400">
-                <Shield className="w-5 h-5" />
-                <span className="font-medium">Your privacy is important to us</span>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 8 */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
-                8
-              </span>
-              Limitation of Liability
-            </h2>
-            <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
-              <p>
-                To the fullest extent permitted by law, CryptoBlog shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the Services.
-              </p>
-              <p>
-                We do not warrant that the Services will be uninterrupted, secure, or error-free.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 9 */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
-                9
-              </span>
-              Termination
-            </h2>
-            <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
-              <p>
-                We reserve the right to terminate or suspend your access to our Services immediately, without prior notice, for any reason, including breach of these Terms.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 10 */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white flex items-center">
-              <span className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
-                10
               </span>
               Contact Information
             </h2>
             <div className="pl-11 space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                If you have any questions about these Terms, please contact us:
+                If you have any questions regarding these Terms of Service or potential engagements, please get in touch:
               </p>
               <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4 space-y-2">
-                <p className="font-medium text-gray-900 dark:text-white">CryptoBlog</p>
-                <p>Email: legal@cryptoblog.com</p>
-                <p>Address: 123 Crypto Street, San Francisco, CA 94102</p>
+                <p className="font-medium text-gray-900 dark:text-white">Maksudur Rahman</p>
+                <p>Email: maksudur.dev02@gmail.com</p>
+                <p>Location: Remote / Dhaka, Bangladesh</p>
+                <p>Website: https://maksudur.dev</p>
               </div>
             </div>
           </section>
@@ -231,12 +184,11 @@ export default function TermsPage() {
                 Agreement Acknowledgment
               </h3>
               <p className="text-green-800 dark:text-green-200 text-sm">
-                By using CryptoBlog, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+                By using Maksudur.dev, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }

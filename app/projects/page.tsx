@@ -15,9 +15,8 @@ export default function ProjectsPage() {
     : projects.filter(p => p.projectType === filter);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#0B1120] pb-20 pt-10">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
+    <div className="max-w-7xl mx-auto pb-12">
+      {/* Header */}
         <header className="mb-10">
           <Link 
             href="/" 
@@ -73,6 +72,5 @@ export default function ProjectsPage() {
           </AnimatePresence>
         </motion.div>
       </div>
-    </div>
   );
 }

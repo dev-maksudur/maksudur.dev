@@ -1,4 +1,5 @@
 import { ServicePageData } from "./types";
+import { getYearsOfExperience } from "@/lib/utils/experience";
 
 export const hirePhpDeveloper: ServicePageData = {
   id: "hire-php-developer",
@@ -10,7 +11,7 @@ export const hirePhpDeveloper: ServicePageData = {
   keywords: ["hire php developer", "php freelancer", "php software engineer", "dedicated php developer", "php freelancer bangladesh"],
   intro: [
     "PHP remains the backbone of the web, powering over 75% of all websites globally. From fast-growing startup platforms to massive enterprise systems, modern PHP (PHP 8.x) offers speed, stability, and an expansive ecosystem. However, writing high-performance PHP requires deep knowledge of modern OOP paradigms, memory management, query execution plans, and secure coding practices. If you need to build custom web applications, integrate complex APIs, or fix performance bottlenecks, hiring a dedicated PHP developer is crucial.",
-    "I am Maksudur Rahman, a professional PHP Software Engineer and Laravel Developer based in Dhaka, Bangladesh. With more than 5 years of hands-on experience, I design, code, and deploy custom PHP applications that process thousands of active requests, maintain absolute database consistency, and integrate smoothly with third-party service providers. I specialize in utilizing modern PHP features like typed properties, attributes, union types, and match expressions to write expressive, self-documenting code that stands the test of time.",
+    `I am Maksudur Rahman, a professional PHP Software Engineer and Laravel Developer based in Dhaka, Bangladesh. With more than ${getYearsOfExperience()} years of hands-on experience, I design, code, and deploy custom PHP applications that process thousands of active requests, maintain absolute database consistency, and integrate smoothly with third-party service providers. I specialize in utilizing modern PHP features like typed properties, attributes, union types, and match expressions to write expressive, self-documenting code that stands the test of time.`,
     "My development philosophy is focused on utility, clarity, and security. I work closely with project stakeholders to architect custom solutions that address their business bottlenecks. Whether you need a raw PHP script refactored into a modern MVC framework, a custom CRM built from scratch, or performance optimization for a slow database, I deliver high-quality code and clear documentation."
   ],
   offers: [

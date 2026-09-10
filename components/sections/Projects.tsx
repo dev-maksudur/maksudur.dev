@@ -6,6 +6,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { FadeIn } from "../ui/framer-wrapper";
 import { projects } from "@/lib/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
@@ -18,29 +19,36 @@ export default function Projects() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <FadeIn>
           <div className="space-y-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-purple-500/10 border border-purple-500/20 text-purple-600 dark:text-purple-400">
               Portfolio
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Selected <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400">Work</span>
             </h2>
-            <h3 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-              Selected <span className="text-blue-600 dark:text-blue-400">Work</span>
-            </h3>
           </div>
         </FadeIn>
         
-        <div className="flex gap-2 sm:gap-3">
+        <div className="flex items-center gap-3">
+          <Link
+            href="/projects"
+            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 mr-2 transition-colors"
+          >
+            <span>All Projects</span>
+            <ArrowRight size={16} />
+          </Link>
           <button 
             onClick={() => swiperRef.current?.slidePrev()} 
-            className="group p-3 sm:p-4 rounded-full transition-all border bg-white border-slate-200 hover:border-blue-500 text-slate-600 hover:text-blue-600 dark:bg-slate-900 dark:border-slate-800 dark:hover:border-blue-500 dark:text-slate-400 dark:hover:text-white"
+            className="group p-3 sm:p-3.5 rounded-full transition-all border bg-white border-slate-200 hover:border-purple-500 text-slate-600 hover:text-purple-600 dark:bg-slate-900 dark:border-slate-800 dark:hover:border-purple-500 dark:text-slate-400 dark:hover:text-white"
             aria-label="Previous Slide"
           >
-            <ArrowLeft size={20} className="sm:w-6 sm:h-6 group-hover:-translate-x-1 transition-transform" />
+            <ArrowLeft size={18} className="group-hover:-translate-x-0.5 transition-transform" />
           </button>
           <button 
             onClick={() => swiperRef.current?.slideNext()} 
-            className="group p-3 sm:p-4 rounded-full transition-all border bg-white border-slate-200 hover:border-blue-500 text-slate-600 hover:text-blue-600 dark:bg-slate-900 dark:border-slate-800 dark:hover:border-blue-500 dark:text-slate-400 dark:hover:text-white"
+            className="group p-3 sm:p-3.5 rounded-full transition-all border bg-white border-slate-200 hover:border-purple-500 text-slate-600 hover:text-purple-600 dark:bg-slate-900 dark:border-slate-800 dark:hover:border-purple-500 dark:text-slate-400 dark:hover:text-white"
             aria-label="Next Slide"
           >
-            <ArrowRight size={20} className="sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
           </button>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const socialLinks = [
   { name: "WhatsApp", icon: WhatsAppIcon, href: "https://wa.me/maksudur.dev" },
-  { name: "GitHub", icon: Github, href: "https://github.com/valiantboymaksud" },
+  { name: "GitHub", icon: Github, href: "https://github.com/dev-maksudur" },
   { name: "LinkedIn", icon: Linkedin, href: "http://linkedin.com/in/maksudur-dev" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
   { name: "Email", icon: Mail, href: "mailto:maksudur.dev02@gmail.com" },

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, Target, Zap, Shield, Code2, Rocket } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Target, Zap, Shield, Code2, Rocket, ExternalLink } from "lucide-react";
 import ProjectVisual from "@/components/ui/ProjectVisual";
 
 export default function ProjectDetailContent({ project }: { project: any }) {
@@ -11,9 +11,8 @@ export default function ProjectDetailContent({ project }: { project: any }) {
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-white dark:bg-[#0B1120] text-slate-900 dark:text-slate-200 pb-20 pt-10"
+      className="max-w-7xl mx-auto pb-12"
     >
-      <div className="max-w-7xl mx-auto px-4">
         {/* Navigation */}
         <Link 
           href="/projects" 
@@ -54,6 +53,20 @@ export default function ProjectDetailContent({ project }: { project: any }) {
                 <p className="font-semibold text-slate-900 dark:text-white">{project.category}</p>
               </div>
             </div>
+
+            {project.liveUrl && (
+              <div className="pt-6">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#6a2cff] to-[#ff8a00] text-white text-sm font-semibold shadow-lg shadow-purple-500/20 hover:opacity-95 transition-opacity"
+                >
+                  <span>Visit Live Platform</span>
+                  <ExternalLink size={15} />
+                </a>
+              </div>
+            )}
           </motion.div>
 
           <motion.div
@@ -170,7 +183,6 @@ export default function ProjectDetailContent({ project }: { project: any }) {
             </div>
           </aside>
         </div>
-      </div>
     </motion.div>
   );
 }

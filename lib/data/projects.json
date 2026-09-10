@@ -8,8 +8,9 @@
     "image": "",
     "category": "Developer Platform",
     "projectType": "Personal",
-    "role": "Lead Engineer",
+    "role": "Founder & Lead Engineer",
     "duration": "2023 - Present",
+    "liveUrl": "https://kodersolution.com",
     "challenges": [
       "Architecting a high-throughput content management and forum engine capable of handling concurrent student discussions and article reads.",
       "Optimizing full-text search and real-time forum notifications for active developer threads.",

@@ -32,18 +32,32 @@ const experiences: ExperienceItem[] = [
   }
 ];
 
-export default function Experience() {
+export default function Experience({ 
+  isPageHeading = false,
+  isStandalone = false,
+}: { 
+  isPageHeading?: boolean;
+  isStandalone?: boolean;
+}) {
+  const HeadingTag = isPageHeading ? "h1" : "h2";
+
   return (
-    <section id="experience" className="py-12 px-3 sm:px-6 lg:px-8 bg-white dark:bg-black/20 transition-colors duration-500">
+    <section 
+      id="experience" 
+      className={`${isStandalone ? 'pt-0 pb-8' : 'py-12 px-3 sm:px-6 lg:px-8 bg-white dark:bg-black/20'} transition-colors duration-500`}
+    >
       <div className="max-w-5xl mx-auto">
         <FadeIn>
           <div className="mb-8">
-            <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-3 text-slate-900 dark:text-white">
-              Professional <span className="text-blue-600 dark:text-blue-400">History</span>
-            </h2>
-            <div className="h-1 w-16 bg-blue-500 rounded-full mb-3" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-3 bg-purple-500/10 border border-purple-500/20 text-purple-600 dark:text-purple-400">
+              Career Timeline
+            </div>
+            <HeadingTag className="text-2xl md:text-4xl font-bold tracking-tight mb-3 text-slate-900 dark:text-white">
+              Professional <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400">History</span>
+            </HeadingTag>
+            <div className="h-1 w-16 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full mb-3" />
             <p className="text-base sm:text-lg max-w-2xl text-slate-600 dark:text-slate-300">
-              My career journey as a software engineer, building impactful digital products and leading engineering teams.
+              My career journey as a software engineer, building impactful digital products, fintech backends, and leading engineering teams.
             </p>
           </div>
         </FadeIn>
@@ -60,7 +74,10 @@ export default function Experience() {
             >
               {/* Left Column: Date & Company */}
               <div className="space-y-3">
-                <div className="font-mono text-sm font-bold tracking-tighter text-blue-600 dark:text-blue-400">
+                <div className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm font-bold tracking-tight text-purple-600 dark:text-purple-400">
+                  {idx === 0 && (
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  )}
                   {exp.period}
                 </div>
                 <div>
@@ -68,7 +85,7 @@ export default function Experience() {
                     {exp.company}
                   </h3>
                   <div className="flex items-center gap-1.5 text-xs font-medium text-slate-500">
-                    <MapPin className="w-3.5 h-3.5" />
+                    <MapPin className="w-3.5 h-3.5 text-purple-500" />
                     {exp.location}
                   </div>
                 </div>
@@ -86,7 +103,7 @@ export default function Experience() {
                   {exp.skills.map((skill, sIdx) => (
                     <span 
                       key={sIdx}
-                      className="px-3 py-1 text-xs font-bold rounded-md border bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"
+                      className="px-3 py-1 text-xs font-semibold rounded-lg border bg-slate-100 border-slate-200 text-slate-700 hover:border-purple-300 dark:bg-white/5 dark:border-white/10 dark:text-slate-300 dark:hover:border-purple-500/30 transition-colors"
                     >
                       {skill}
                     </span>
