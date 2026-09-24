@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu, X, Github, Linkedin, Mail, Briefcase, User, FolderOpen,
-  Sun, Moon, Home
+  Sun, Moon, Home, FileDown
 } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
 import { useTheme } from "./ThemeProvider";
@@ -39,19 +39,19 @@ export default function Sidebar() {
       <div className="px-6">
         {/* Profile */}
         <Link href="/" className="flex items-center gap-3 mb-10 group">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-500/50 group-hover:ring-blue-500 transition-all shadow-lg">
+          <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-purple-500/40 group-hover:ring-purple-500 transition-all shadow-md bg-slate-900 flex-shrink-0">
             <img
               src="/images/maksudur.webp"
-              alt="Maksudur Rahman - Senior Laravel Developer & PHP Software Engineer | Founder of Kodersolution"
-              title="Maksudur Rahman - Senior Laravel Developer & Software Engineer"
+              alt="Maksudur Rahman -  Laravel Developer & PHP Software Engineer"
+              title="Maksudur Rahman -  Laravel Developer & Software Engineer"
               width={48}
               height={48}
-              className="object-cover w-full h-full"
+              className="object-cover object-top w-full h-full group-hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div>
-            <span className="text-lg font-bold dark:text-white text-slate-900 tracking-tight block">Maksudur Rahman</span>
-            <p className="text-xs text-blue-500 dark:text-blue-400 font-medium uppercase tracking-wider">Software Engineer</p>
+            <span className="text-base font-bold dark:text-white text-slate-900 tracking-tight block group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">Maksudur Rahman</span>
+            <p className="text-[11px] text-purple-600 dark:text-purple-400 font-semibold uppercase tracking-wider">Software Engineer</p>
           </div>
         </Link>
 
@@ -71,10 +71,10 @@ export default function Sidebar() {
                   href={item.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    "flex items-center px-4 py-3 rounded-lg transition-all duration-200 text-sm gap-3",
+                    "flex items-center px-4 py-3 rounded-xl transition-all duration-200 text-sm gap-3 font-medium",
                     isActive
-                      ? "bg-blue-600 text-white font-semibold shadow-md shadow-blue-500/25"
-                      : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5 font-medium"
+                      ? "bg-purple-600 text-white font-semibold shadow-md shadow-purple-500/25"
+                      : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5"
                   )}
                 >
                   <Icon size={18} className={isActive ? "text-white" : "text-slate-500 dark:text-slate-400"} />
@@ -84,14 +84,15 @@ export default function Sidebar() {
             );
           })}
 
-          {/* Animated Download CV Button */}
+          {/* Refined Download CV Button */}
           <li>
             <a
               href="/files/Maksudur_Rahman.pdf"
               download
-              className="flex items-center justify-center px-4 py-3 mt-2 rounded-lg font-bold text-white bg-gradient-to-r from-[#6a2cff] via-[#8b5cf6] to-[#ff8a00] bg-[length:200%_200%] animate-gradientHover hover:scale-105 transition-all text-sm shadow-md"
+              className="flex items-center justify-center gap-2 px-4 py-3 mt-3 rounded-xl font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all text-sm group"
             >
-              Download CV
+              <FileDown size={16} className="group-hover:translate-y-0.5 transition-transform" />
+              <span>Download CV</span>
             </a>
           </li>
         </ul>
@@ -163,17 +164,17 @@ export default function Sidebar() {
       {/* Mobile Header */}
       <header className="md:hidden fixed top-0 w-full h-16 dark:bg-[#0B1120]/95 bg-white/95 backdrop-blur-md border-b border-slate-200 dark:border-white/10 z-50 px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-8 h-8 rounded-full overflow-hidden ring-1 ring-blue-500/30 group-hover:ring-blue-500 transition-all">
+          <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-purple-500/40 group-hover:ring-purple-500 transition-all bg-slate-900 shadow-md">
             <img
               src="/images/maksudur.webp"
-              alt="Maksudur Rahman - Senior Laravel Developer & PHP Software Engineer"
+              alt="Maksudur Rahman -  Laravel Developer & PHP Software Engineer"
               title="Maksudur Rahman - Software Engineer"
-              width={32}
-              height={32}
-              className="object-cover w-full h-full"
+              width={36}
+              height={36}
+              className="object-cover object-top w-full h-full group-hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <span className="font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">Maksudur Rahman</span>
+          <span className="font-bold text-slate-900 dark:text-white group-hover:text-purple-500 transition-colors">Maksudur Rahman</span>
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}

@@ -1,6 +1,6 @@
 # Maksudur Rahman - Laravel Developer & PHP Software Engineer
 
-> Senior Remote Software Engineer and Founder/Lead Architect of **Kodersolution.com**. Specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech systems, and React / Next.js frontends. Available for global contract, freelance, and remote development roles.
+>  Remote Software Engineer and Founder/Lead Architect of **Kodersolution.com**. Specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech systems, and React / Next.js frontends. Available for global contract, freelance, and remote development roles.
 
 This document serves as a machine-readable index for AI agents, LLM search engines, and automated crawlers navigating https://maksudur.dev.
 

@@ -96,7 +96,7 @@ export default function RootLayout({
       <head>
         <meta name="title" content="Laravel Developer & PHP Software Engineer | Maksudur.dev" />
         <link rel="alternate" type="text/markdown" title="LLMs.txt" href="/llms.txt" />
-        <link rel="preload" as="image" href="/images/maksudur.webp" type="image/webp" />
+        <link rel="preload" as="image" href="/images/avatar-workspace.webp" type="image/webp" />
         <JsonLd data={getRootSchema()} />
         <script
           dangerouslySetInnerHTML={{

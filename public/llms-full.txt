@@ -1,13 +1,13 @@
 # Maksudur Rahman - Full Engineering Portfolio & Documentation
 
-> Senior Software Engineer and Founder/Lead Architect of **Kodersolution.com**. Specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech solutions, and Next.js / React full-stack architectures.
+>  Software Engineer and Founder/Lead Architect of **Kodersolution.com**. Specializing in scalable Laravel web applications, payment gateway integrations, RESTful APIs, fintech solutions, and Next.js / React full-stack architectures.
 
 ---
 
 ## 1. Professional Overview & Bio
 
 - **Name**: Maksudur Rahman
-- **Title**: Senior Software Engineer / Laravel & PHP Specialist
+- **Title**:  Software Engineer / Laravel & PHP Specialist
 - **Website**: https://maksudur.dev
 - **Email**: valiantmaksud@gmail.com / maksudur.dev02@gmail.com
 - **WhatsApp**: https://wa.me/maksudur.dev
