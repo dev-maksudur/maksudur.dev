@@ -88,7 +88,7 @@ export default async function ServiceDetailPage({
       {/* Back to Services navigation */}
       <FadeIn>
         <Link 
-          href="/services" 
+          href="/services/" 
           className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400 mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Services
@@ -248,7 +248,7 @@ export default async function ServiceDetailPage({
                 Connect directly to discuss deadlines, technical requirements, and custom specifications for your {service.id.replace(/-/g, " ")}.
               </p>
               <Link
-                href={`/contact?subject=Inquiry: ${service.heading.replace("Hire Dedicated ", "")}`}
+                href={`/contact/?subject=Inquiry: ${service.heading.replace("Hire Dedicated ", "")}`}
                 className="block w-full py-3 text-center rounded-xl font-bold bg-white text-blue-700 hover:bg-blue-50 transition-colors shadow-md text-sm"
               >
                 Inquire Service →

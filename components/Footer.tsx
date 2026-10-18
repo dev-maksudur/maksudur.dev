@@ -66,7 +66,7 @@ export default function Footer() {
               </p>
               <div className="pt-4">
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-all group"
                 >
                   Hire Me <span className="group-hover:translate-x-1 transition-transform">→</span>

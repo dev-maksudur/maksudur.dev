@@ -116,7 +116,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex justify-center">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(37,99,235,0.2)] bg-blue-600 hover:bg-blue-500 text-white"
             >
               Discuss Your Project <ArrowRight className="w-5 h-5" />

@@ -30,7 +30,7 @@ export default function Projects() {
         
         <div className="flex items-center gap-3">
           <Link
-            href="/projects"
+            href="/projects/"
             className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 mr-2 transition-colors"
           >
             <span>All Projects</span>

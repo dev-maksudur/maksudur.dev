@@ -76,14 +76,14 @@ export default function Intro({
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 px-6 py-3 font-semibold rounded-xl transition-all shadow-md hover:shadow-lg shadow-purple-500/20 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white"
             >
               <span>Discuss a Project</span>
               <ArrowRight size={16} />
             </Link>
             <Link
-              href="/experience"
+              href="/experience/"
               className="inline-flex items-center gap-2 px-6 py-3 font-semibold rounded-xl transition-all border bg-slate-100 hover:bg-slate-200 border-slate-300 text-slate-900 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/10 dark:text-white"
             >
               Full Career History

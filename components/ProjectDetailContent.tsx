@@ -15,7 +15,7 @@ export default function ProjectDetailContent({ project }: { project: any }) {
     >
         {/* Navigation */}
         <Link 
-          href="/projects" 
+          href="/projects/" 
           className="inline-flex items-center text-sm font-bold text-blue-600 dark:text-blue-400 hover:gap-2 transition-all mb-12 group"
         >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform mr-2" /> Back to Projects

@@ -36,9 +36,9 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
           {[
-            { name: "Profile", href: "/profile" },
-            { name: "Experience", href: "/experience" },
-            { name: "Projects", href: "/projects" },
+            { name: "Profile", href: "/profile/" },
+            { name: "Experience", href: "/experience/" },
+            { name: "Projects", href: "/projects/" },
           ].map((item) => (
             <Link
               key={item.name}
@@ -58,7 +58,7 @@ export default function Navbar() {
           </button>
 
           <Link
-            href="/contact"
+            href="/contact/"
             className="px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-full text-sm font-semibold transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]"
           >
             Hire Me
@@ -94,10 +94,10 @@ export default function Navbar() {
           >
             <div className="px-4 py-6 space-y-4">
               {[
-                { name: "Profile", href: "/profile" },
-                { name: "Experience", href: "/experience" },
-                { name: "Projects", href: "/projects" },
-                { name: "Contact", href: "/contact" },
+                { name: "Profile", href: "/profile/" },
+                { name: "Experience", href: "/experience/" },
+                { name: "Projects", href: "/projects/" },
+                { name: "Contact", href: "/contact/" },
               ].map((item) => (
                 <Link
                   key={item.name}

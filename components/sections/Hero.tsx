@@ -75,7 +75,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
                   <Link
-                    href="/projects"
+                    href="/projects/"
                     className="flex justify-center items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-base transition-all bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white shadow-lg shadow-purple-500/25"
                   >
                     <span>View Projects</span>
@@ -84,7 +84,7 @@ export default function Hero() {
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
                   <Link
-                    href="/contact"
+                    href="/contact/"
                     className="flex justify-center items-center px-7 py-3.5 rounded-xl font-semibold text-base transition-all border bg-slate-100/90 hover:bg-slate-200 border-slate-300 text-slate-900 dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/15 dark:text-white"
                   >
                     Discuss a Project

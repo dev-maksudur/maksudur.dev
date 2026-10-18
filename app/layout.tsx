@@ -47,12 +47,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Maksudur Rahman" }],
   creator: "Maksudur Rahman",
-  alternates: {
-    canonical: "/",
-  },
-  other: {
-    title: "Laravel Developer & PHP Software Engineer | Maksudur.dev",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -83,6 +77,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -94,7 +95,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-        <meta name="title" content="Laravel Developer & PHP Software Engineer | Maksudur.dev" />
         <link rel="alternate" type="text/markdown" title="LLMs.txt" href="/llms.txt" />
         <link rel="preload" as="image" href="/images/avatar-workspace.webp" type="image/webp" />
         <JsonLd data={getRootSchema()} />

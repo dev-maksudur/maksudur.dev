@@ -1,7 +1,25 @@
-// src/app/not-found.tsx
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Home } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description: "The page you're looking for doesn't exist or has been moved.",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'none',
+      'max-snippet': -1,
+    },
+  },
+};
 
 export default function NotFound() {
   return (
